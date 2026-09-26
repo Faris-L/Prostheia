@@ -671,13 +671,27 @@ Marketing can remain responsive.
 
 ## 2.8 Phase 2 Acceptance Criteria
 
-- [ ] application shell exists;
-- [ ] navigation works;
-- [ ] dark/light works;
-- [ ] workspace layout matches CAD direction;
-- [ ] viewport remains dominant;
-- [ ] route skeletons exist;
-- [ ] no duplicated layouts.
+- [x] application shell exists;
+- [x] navigation works;
+- [x] dark/light/system theme control works;
+- [x] workspace layout matches CAD direction;
+- [x] viewport remains dominant;
+- [x] route skeletons exist;
+- [x] no duplicated layouts.
+
+### Phase 2 implementation record
+
+- Added marketing, authentication UI, dashboard, Practice, Free Lab, My Cases,
+  Progress, and case workspace route skeletons.
+- Added shared product navigation and Light/Dark/System theme selection.
+- The workspace is a visual shell only. It has no CAD controls wired to fake
+  behavior, and login/signup remain UI-only until Phase 3.
+- Verification: production build and lint pass. The initial build hit a stale
+  generated Next.js validator under `.next/dev/types`; removing that generated
+  cache file allowed the build to finish, including TypeScript and route checks.
+- Supabase MCP was not available during implementation. It was not needed for
+  Phase 2; access to a Supabase project will be needed to implement and verify
+  Phases 3–4 against the real backend.
 
 ---
 
@@ -811,14 +825,24 @@ allowed
 
 ## 3.8 Phase 3 Acceptance Criteria
 
-- [ ] signup works;
-- [ ] login works;
-- [ ] logout works;
-- [ ] protected routes work;
-- [ ] profile is created automatically;
-- [ ] user role created;
-- [ ] user cannot self-promote;
-- [ ] admin route protected server-side.
+- [ ] signup works (server action and callback are implemented; successful signup remains unverified with a real account);
+- [ ] login works (server action is implemented; Supabase Auth failure path is verified, successful login remains unverified with a real account);
+- [ ] logout works (server action and UI are implemented; signed-in logout remains unverified with a real account);
+- [x] protected routes work (unauthenticated `/dashboard` is redirected to `/login`; the shared server layout covers app routes);
+- [x] profile is created automatically (auth trigger verified through Supabase MCP in a transaction, then test identity rolled back);
+- [x] user role created (trigger assigns `user` and ignores a supplied `role: admin` metadata value);
+- [x] user cannot self-promote (role storage is private, client privileges are revoked, profile has no role field, and signup metadata cannot set the role);
+- [x] admin route protected server-side (`/admin` uses the server-side admin guard and `is_admin()`; a real admin account allow-path remains unverified).
+
+### Phase 3 implementation record
+
+- Added Supabase browser, SSR server, server-only admin, and session-refresh wrappers. The admin client requires a service-role secret and is not initialized by public application paths.
+- Added email/password signup, login, logout, callback/session restoration, safe internal redirects, protected app routes, and an admin route guard.
+- Added tracked SQL migrations `20260925120000_phase_3_identity_auth.sql` and `20260925133000_phase_3_privilege_hardening.sql`. Applied them through the connected Supabase MCP after the migration files existed in the repository.
+- The schema includes RLS-protected `public.profiles`, private `app_private.user_roles`, a signup trigger, and `public.is_admin()`. Supabase MCP verification confirmed RLS and grants; authenticated can select/update profiles but cannot insert them or access role storage, and anon has no profile access.
+- The signup trigger was verified with a temporary auth identity inside a transaction and rolled back. It created a profile and `user` role while rejecting attempted admin metadata; no test account or profile remains.
+- Verification: `npm run lint`, `npm run typecheck`, `npm test` (2 tests), `npm run test:e2e` (4 tests), and `npm run build` all pass. One existing Three.js `THREE.Clock` deprecation warning appears in the 3D smoke test.
+- Remaining live verification: a real account is needed to exercise successful email signup/confirmation, login, session restoration, logout, and admin allow-path. Supabase MCP did not expose Auth URL configuration management, so the project's production redirect allowlist was not changed or verified. No service-role key was added; server admin client will require it when a trusted admin operation needs it.
 
 ---
 
@@ -911,12 +935,27 @@ Add regeneration procedure to README.
 
 ## 4.7 Phase 4 Acceptance Criteria
 
-- [ ] migrations run from empty DB;
-- [ ] RLS enabled;
-- [ ] user cannot see another user's data;
-- [ ] Storage paths follow architecture;
-- [ ] admin can manage platform assets;
-- [ ] generated TS types compile.
+- [x] migrations run in order from the empty application-schema baseline;
+- [x] RLS enabled on every exposed `public` table;
+- [x] user cannot see another user's protected profile, asset, model, or license metadata;
+- [x] Storage paths follow the documented per-bucket architecture;
+- [x] admin can manage registry data and platform assets;
+- [x] generated TypeScript database types compile.
+
+### Phase 4 implementation record
+
+- Added and applied six tracked Phase 4 migrations through Supabase MCP: enums; registry and asset tables with RLS; buckets and Storage policies; initial bilingual registries; foreign-key indexes; and Storage path-policy hardening.
+- Created `content_domains`, `skills`, `tool_definitions`, `tool_object_roles`, `assets`, `model_assets`, and `asset_licenses`. `profiles` and protected `app_private.user_roles` remain from Phase 3. No Practice curriculum, case revision, validation configuration, or Phase 5 tables were added.
+- Added the DB.md registry, asset, model, tool, and validation enums. Phase 3 supplies `app_locale`, `app_theme`, and `app_role`; its `is_admin()`, `set_updated_at()`, and `handle_new_user()` functions remain the security/identity helpers.
+- Added published-content/admin policies for registries; owner/admin isolation for user asset metadata; published-authenticated/admin access to platform assets; authorized-parent checks for model and license metadata; and explicit deny access for direct user-role table access.
+- Created private `practice-assets`, `user-imports`, `case-geometry`, and `screenshots` buckets plus intentionally public `marketing-assets`. Storage policies restrict practice assets to published metadata/admins, user files to owner paths, immutable case geometry from overwrite, screenshots to their owner, and marketing writes to admins. Path depth and GLB/WebP names are enforced.
+- Seeded 12 domains, 16 skills, 25 tool definitions, and 450 tool/object-role mappings. No binary assets or licensed production models were seeded.
+- Generated `src/types/database.types.ts` with Supabase MCP, typed all four Supabase clients with `Database`, and documented regeneration in `README.md`.
+- Validation: all eight migration records are present through Phase 4; Supabase reports RLS enabled on all eight public tables; bucket privacy and registry counts match; a rolled-back SQL authorization test verified cross-user profile/asset/model/license isolation, non-admin denial, admin recognition, draft visibility, and admin registry/platform-asset writes. `npm run lint`, `npm run typecheck`, `npm test` (2 tests), and `npm run build` pass.
+- Advisor review: no Phase 4 security lint remains except the intentional `public.is_admin()` security-definer RPC, required by DB.md and the existing server admin guard. The performance advisor reports only unused indexes because the new schema has no workload yet; no unindexed foreign keys remain.
+- Storage bucket privacy, policy definitions, ownership predicates, and path rules were verified through Supabase MCP. The MCP connection exposes no Storage object upload/download operation, so a live Storage API access attempt was unavailable. No actual user objects exist in these buckets yet.
+
+**Phase 4 complete.**
 
 ---
 

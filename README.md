@@ -22,3 +22,12 @@ for the 3D dependency stack.
 
 Copy `.env.example` to `.env.local` when local Supabase credentials are
 available. Keep actual credentials out of version control.
+
+## Supabase database types
+
+After applying tracked SQL migrations to the connected Supabase project, use
+the Supabase MCP `generate_typescript_types` operation and replace
+`src/types/database.types.ts` with its generated TypeScript output. Supabase
+browser, server, proxy, and server-only admin clients import this `Database`
+type. Never place a service role key in browser code or a `NEXT_PUBLIC_*`
+variable.

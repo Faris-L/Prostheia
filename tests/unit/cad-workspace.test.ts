@@ -3,8 +3,11 @@ import { getStandardView } from "@/cad/camera/standard-views";
 import { useWorkspaceStore } from "@/cad/engine/workspace-store";
 import { degreesToRadians, fromDisplayTransform, radiansToDegrees, rotationSnapRadians, toDisplayTransform, translationSnapValue } from "@/cad/transform/units";
 import { demoObjects } from "@/cad/scene/demo-objects";
+import { runIsolateCommand, runTransparencyCommand, runVisibilityCommand } from "@/cad/engine/cad-actions";
+import { useHistoryStore } from "@/cad/engine/history-store";
+import { useSaveStore } from "@/cad/engine/save-store";
 
-afterEach(() => useWorkspaceStore.getState().resetDemo());
+afterEach(() => { useWorkspaceStore.getState().resetDemo(); useHistoryStore.getState().clear(); useSaveStore.getState().markClean(); });
 
 describe("Phase 5 CAD workspace foundations", () => {
   it("calculates standard views from the canonical Z-up dental axes", () => {
@@ -31,14 +34,14 @@ describe("Phase 5 CAD workspace foundations", () => {
     const second = demoObjects[1].id;
     store.select(first);
     expect(useWorkspaceStore.getState().selectedObjectId).toBe(first);
-    store.setVisible(first, false);
+    runVisibilityCommand([{ id: first, visible: false }]);
     expect(useWorkspaceStore.getState().objects.find((object) => object.id === first)?.visible).toBe(false);
-    store.showAll();
+    runIsolateCommand(null);
     expect(useWorkspaceStore.getState().objects.every((object) => object.visible)).toBe(true);
-    store.isolate(second);
+    runIsolateCommand(second);
     expect(useWorkspaceStore.getState().objects.filter((object) => object.visible).map((object) => object.id)).toEqual([second]);
-    store.showAll();
-    store.setOpacity(second, 0.35);
+    runIsolateCommand(null);
+    runTransparencyCommand(second, 1, 0.35);
     expect(useWorkspaceStore.getState().objects.find((object) => object.id === second)?.opacity).toBe(0.35);
     store.select(null);
     expect(useWorkspaceStore.getState().selectedObjectId).toBeNull();

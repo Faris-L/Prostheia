@@ -1,0 +1,2625 @@
+{
+  "schemaVersion": 1,
+  "scope": "PRIVATE EDUCATIONAL V1 ONLY",
+  "generatedAt": "2026-10-02T12:00:29.770Z",
+  "sourceManifest": ".research/dundee-permanent-teeth/candidate-manifest.json",
+  "acceptedCandidateUids": [
+    "f9b48a29d34f4923b683433f030c5c70",
+    "69f3142830064588b000b04bea0ee09f",
+    "e719a474ef7e4bd7abec508f85f1e984",
+    "e035713849d1438791306e25235ac452",
+    "e1c919d6603846eca873154eeededdd6",
+    "c8a7c2d9280d4c92bc651cfa1459866a",
+    "5e89ddbfc6454e2e8e09c645574b8932",
+    "935637a703dc49eb9eeec9b15a8a5c4c",
+    "fe59fe04725446479bc1115bb12d0ad8",
+    "90dcbf474e5a4d97b8783b7eb2b9c4b7",
+    "00fa4f74e10b4769830bf60469c65e27",
+    "bd930c9b9da14f2a9a8c9b130b0e08a2",
+    "b77dcbc5052e4740b87cdb1964649742"
+  ],
+  "sourceUnitStatus": "unknown",
+  "patientAndSourceImageProvenanceStatus": "unknown",
+  "expertReviewStatus": "not_reviewed",
+  "publicProductionApproval": false,
+  "assets": [
+    {
+      "id": "d4000000-0000-5000-8000-000000000001",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Maxillary First Premolar",
+      "uid": "f9b48a29d34f4923b683433f030c5c70",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-premolar-f9b48a29d34f4923b683433f030c5c70",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Premolar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-premolar-f9b48a29d34f4923b683433f030c5c70. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "b1368ef605a24a38321298a2596f0ebb8a74a6b3d7a834dc1c666cc71d9b5627",
+      "sourceObjChecksum": "14dee9609ee9fdf9f4307be2c23989810d7d7e72dec9ef9a798ec4cae8215de6",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/f9b48a29d34f4923b683433f030c5c70/mesh-original/UL4sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.14402604,
+          3.30226254,
+          6.57801818
+        ],
+        "max": [
+          1.9713068,
+          5.10662794,
+          7.23919343
+        ],
+        "spans": [
+          0.8272807600000001,
+          1.8043654,
+          0.6611752500000003
+        ]
+      },
+      "proposedFdi": 24,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        9.144489248131226,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.144489248131226,
+        0,
+        0,
+        -9.144489248131226,
+        0,
+        0,
+        -14.244063829865057,
+        63.17567150339948,
+        -39.76750429153651,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-f9b48a29d34f4923b683433f030c5c70-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000001",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.782530007502914,
+          -3.0230549823777353,
+          -9.569999999999997
+        ],
+        "max": [
+          3.782530007502916,
+          3.0230549823777433,
+          6.930000000000002
+        ],
+        "spans": [
+          7.56506001500583,
+          6.046109964755479,
+          16.5
+        ]
+      },
+      "runtimeVertexCount": 26486,
+      "runtimeTriangleCount": 52968,
+      "runtimeByteSize": 1272520,
+      "runtimeChecksum": "f4418dd2595db5cfd84ec1801a33a07e35234180df6daea153d3e41f88c72712"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000002",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Maxillary Second Premolar",
+      "uid": "69f3142830064588b000b04bea0ee09f",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-second-premolar-69f3142830064588b000b04bea0ee09f",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Second Premolar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-second-premolar-69f3142830064588b000b04bea0ee09f. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "6d40b7150651817ed114d5d89f0c4b68bc463ea50a530d634fb6612e2b5304ae",
+      "sourceObjChecksum": "0b3c5698d03df5c9b59f902d34dbe37de8e256860fa1dae9a915acfd1fcac56e",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/69f3142830064588b000b04bea0ee09f/mesh-original/UL5sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.50313782,
+          3.31756258,
+          5.98613548
+        ],
+        "max": [
+          2.28259372,
+          4.99918651,
+          6.63870906
+        ],
+        "spans": [
+          0.7794558999999999,
+          1.6816239300000002,
+          0.6525735800000003
+        ]
+      },
+      "proposedFdi": 25,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        9.514612461538887,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.514612461538887,
+        0,
+        0,
+        -9.514612461538887,
+        0,
+        0,
+        -18.009884243262402,
+        60.060251592637584,
+        -40.845322265603095,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-69f3142830064588b000b04bea0ee09f-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000002",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.7081104096800037,
+          -3.1044923581695234,
+          -9.279999999999996
+        ],
+        "max": [
+          3.7081104096800037,
+          3.1044923581695234,
+          6.720000000000003
+        ],
+        "spans": [
+          7.416220819360007,
+          6.208984716339047,
+          16
+        ]
+      },
+      "runtimeVertexCount": 21802,
+      "runtimeTriangleCount": 43600,
+      "runtimeByteSize": 1047684,
+      "runtimeChecksum": "7163de8853a5a0335d9468b097dcfef6bea9c0fc04982ee88670e0cbeb818e4a"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000003",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Maxillary First Molar",
+      "uid": "e719a474ef7e4bd7abec508f85f1e984",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "c09984927d729d9ec1a698614fdea32ebbb42c7c3d523f27f113d533e87692be",
+      "sourceObjChecksum": "c60d80897f30a31cbd7b3bdab9179c02f71c474b89ec35612910b494d1f48c94",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e719a474ef7e4bd7abec508f85f1e984/mesh-original/UL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.6476829,
+          3.30910158,
+          5.07781171
+        ],
+        "max": [
+          2.68708968,
+          5.09402227,
+          6.07118845
+        ],
+        "spans": [
+          1.0394067800000002,
+          1.7849206899999999,
+          0.9933767400000004
+        ]
+      },
+      "proposedFdi": 26,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        9.524232698540796,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.524232698540796,
+        0,
+        0,
+        -9.524232698540796,
+        0,
+        0,
+        -20.642691373587027,
+        53.092835939954284,
+        -41.376653471029016,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-e719a474ef7e4bd7abec508f85f1e984-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000003",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.949776020580501,
+          -4.730575614538932,
+          -9.860000000000001
+        ],
+        "max": [
+          4.949776020580501,
+          4.730575614538932,
+          7.139999999999998
+        ],
+        "spans": [
+          9.899552041161002,
+          9.461151229077863,
+          17
+        ]
+      },
+      "runtimeVertexCount": 28506,
+      "runtimeTriangleCount": 57008,
+      "runtimeByteSize": 1369480,
+      "runtimeChecksum": "275b39569924336a8e088dce95effe651dce2d46ce6940cf35200324f5250750"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000004",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Maxillary Second Molar",
+      "uid": "e035713849d1438791306e25235ac452",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-second-molar-e035713849d1438791306e25235ac452",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Second Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-second-molar-e035713849d1438791306e25235ac452. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "222abf192160adbef2bec67dc6572227124454ff4d194327708457e66a56ea2e",
+      "sourceObjChecksum": "ad24ab4b09bc7835882ad2cc52de575ed2878d2939115b9984c7eaa841f107e6",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e035713849d1438791306e25235ac452/mesh-original/UL7sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.94135534,
+          3.47185993,
+          3.8512454
+        ],
+        "max": [
+          2.87165617,
+          5.05385685,
+          4.70807409
+        ],
+        "spans": [
+          0.93030083,
+          1.58199692,
+          0.8568286900000004
+        ]
+      },
+      "proposedFdi": 27,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        10.429855956988842,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.429855956988842,
+        0,
+        0,
+        -10.429855956988842,
+        0,
+        0,
+        -25.09950838431468,
+        44.6362346852736,
+        -45.78099897274136,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-e035713849d1438791306e25235ac452-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000004",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.85145182678358,
+          -4.468299908257725,
+          -9.569999999999995
+        ],
+        "max": [
+          4.851451826783583,
+          4.468299908257725,
+          6.930000000000004
+        ],
+        "spans": [
+          9.702903653567162,
+          8.93659981651545,
+          16.5
+        ]
+      },
+      "runtimeVertexCount": 28222,
+      "runtimeTriangleCount": 56440,
+      "runtimeByteSize": 1355844,
+      "runtimeChecksum": "56cec850311587cb84535ae9b884b4503198462510ccaa0ca7d00647f228c3f9"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000005",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Mandibular First Molar",
+      "uid": "e1c919d6603846eca873154eeededdd6",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "7633ff26878ba7f160bb6b5d5ebc586f8ca776f24afe284daf3373ecbccee88a",
+      "sourceObjChecksum": "403a4e3b7b7e6564c9bce66c17b11b837c2d0eb72cd6785c63d3fc6fe5e0b3b9",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e1c919d6603846eca873154eeededdd6/mesh-original/LL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.47066319,
+          1.67118227,
+          4.28159236
+        ],
+        "max": [
+          2.54416155,
+          3.49685525,
+          5.50292348
+        ],
+        "spans": [
+          1.07349836,
+          1.8256729799999998,
+          1.2213311199999994
+        ]
+      },
+      "proposedFdi": 36,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        9.037763159533643,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.037763159533643,
+        0,
+        0,
+        -9.037763159533643,
+        0,
+        0,
+        -18.142517563578117,
+        44.215068396312695,
+        -24.838749552671803,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-e1c919d6603846eca873154eeededdd6-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000005",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.851011964913892,
+          -5.519050700963975,
+          -9.734999999999998
+        ],
+        "max": [
+          4.851011964913893,
+          5.519050700963983,
+          6.765000000000002
+        ],
+        "spans": [
+          9.702023929827785,
+          11.038101401927957,
+          16.5
+        ]
+      },
+      "runtimeVertexCount": 27594,
+      "runtimeTriangleCount": 55184,
+      "runtimeByteSize": 1325700,
+      "runtimeChecksum": "ec1cae760c9aa8ba9c60e0ab0aa734bdaad5601cc08376f2a101172ed58ee9cc"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000006",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Maxillary Left Central Incisor",
+      "uid": "c8a7c2d9280d4c92bc651cfa1459866a",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-left-central-incisor-c8a7c2d9280d4c92bc651cfa1459866a",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Left Central Incisor by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-left-central-incisor-c8a7c2d9280d4c92bc651cfa1459866a. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "0b2a312698292424025878cbc4fbb4dbedafd5bc1cbc376b1355759c9fcca7d4",
+      "sourceObjChecksum": "737b9714c459a00e74711d45b59ace3d4884265d5e0fd0f861dcbfa23bc2c59c",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/c8a7c2d9280d4c92bc651cfa1459866a/mesh-original/UL1sketch1_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          -0.2840574,
+          3.16718745,
+          7.41190624
+        ],
+        "max": [
+          0.43131262,
+          5.1225996,
+          8.22623157
+        ],
+        "spans": [
+          0.7153700199999999,
+          1.95541215,
+          0.8143253299999991
+        ]
+      },
+      "proposedFdi": 21,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        10.739423911219944,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.739423911219944,
+        0,
+        0,
+        -10.739423911219944,
+        0,
+        0,
+        -0.7907181153599765,
+        83.97229556183335,
+        -46.19376863184572,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-c8a7c2d9280d4c92bc651cfa1459866a-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000006",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.8413309490789445,
+          -4.3726924602570305,
+          -12.179999999999996
+        ],
+        "max": [
+          3.8413309490789445,
+          4.3726924602570305,
+          8.820000000000002
+        ],
+        "spans": [
+          7.682661898157889,
+          8.745384920514061,
+          21
+        ]
+      },
+      "runtimeVertexCount": 21502,
+      "runtimeTriangleCount": 43000,
+      "runtimeByteSize": 1033288,
+      "runtimeChecksum": "73e1a3f59ed0121ea5e96ab94885aa02d8938a1d6812f25c06c166ca96c16f04"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000007",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Maxillary Lateral Incisor",
+      "uid": "5e89ddbfc6454e2e8e09c645574b8932",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-lateral-incisor-5e89ddbfc6454e2e8e09c645574b8932",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Lateral Incisor by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-lateral-incisor-5e89ddbfc6454e2e8e09c645574b8932. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "f7f58dd904c5415489fd02f085d400dee376b2fe3acddcb7189a80ad96c8d670",
+      "sourceObjChecksum": "d4202f65047acca2f298d6147caee4429665c56f27cdf778adabf73c911edfcc",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/5e89ddbfc6454e2e8e09c645574b8932/mesh-original/UL2sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          0.45420956,
+          3.18702411,
+          7.41077041
+        ],
+        "max": [
+          1.05011451,
+          4.88458633,
+          8.08207321
+        ],
+        "spans": [
+          0.59590495,
+          1.6975622200000005,
+          0.6713028000000012
+        ]
+      },
+      "proposedFdi": 22,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        11.487060544973717,
+        0,
+        0,
+        0,
+        0,
+        0,
+        11.487060544973717,
+        0,
+        0,
+        -11.487060544973717,
+        0,
+        0,
+        -8.64013083567564,
+        88.98361633837489,
+        -47.91953890986097,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-5e89ddbfc6454e2e8e09c645574b8932-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000007",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.4225981198497677,
+          -3.855647953805198,
+          -11.309999999999995
+        ],
+        "max": [
+          3.4225981198497677,
+          3.855647953805198,
+          8.190000000000003
+        ],
+        "spans": [
+          6.845196239699535,
+          7.711295907610396,
+          19.5
+        ]
+      },
+      "runtimeVertexCount": 25110,
+      "runtimeTriangleCount": 50216,
+      "runtimeByteSize": 1206468,
+      "runtimeChecksum": "0f3dcb88e3154326a5b196b4b59765b99f948122bb96040005cf871405ae5b54"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000008",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Mandibular First Premolar",
+      "uid": "935637a703dc49eb9eeec9b15a8a5c4c",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-first-premolar-935637a703dc49eb9eeec9b15a8a5c4c",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular First Premolar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-first-premolar-935637a703dc49eb9eeec9b15a8a5c4c. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "38ead7788f8e17ff2064f2a066e750c490591e8421565d21808e5bec4bca5631",
+      "sourceObjChecksum": "c09137c36b4d66fa713f1c15e0f12b73508901e27065a03f84efd0fd4a659f32",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/935637a703dc49eb9eeec9b15a8a5c4c/mesh-original/L4sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.16776669,
+          1.32551026,
+          5.72966527
+        ],
+        "max": [
+          1.95288264,
+          3.35569715,
+          6.49602413
+        ],
+        "spans": [
+          0.7851159499999998,
+          2.0301868900000004,
+          0.7663588600000004
+        ]
+      },
+      "proposedFdi": 34,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        7.388482348046291,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7.388482348046291,
+        0,
+        0,
+        -7.388482348046291,
+        0,
+        0,
+        -11.528431244573742,
+        45.16464516229833,
+        -18.643509158164246,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-935637a703dc49eb9eeec9b15a8a5c4c-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000008",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.9004076688722966,
+          -2.831114454689441,
+          -8.849999999999998
+        ],
+        "max": [
+          2.9004076688722966,
+          2.831114454689441,
+          6.15
+        ],
+        "spans": [
+          5.800815337744593,
+          5.662228909378882,
+          14.999999999999998
+        ]
+      },
+      "runtimeVertexCount": 23634,
+      "runtimeTriangleCount": 47264,
+      "runtimeByteSize": 1135624,
+      "runtimeChecksum": "12d921a4d14a8ed4ade327dde4547ab499aeabb93aefe75e4df1ecc1de7635e4"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000009",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Mandibular Left Second Premolar",
+      "uid": "fe59fe04725446479bc1115bb12d0ad8",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-left-second-premolar-fe59fe04725446479bc1115bb12d0ad8",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular Left Second Premolar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-left-second-premolar-fe59fe04725446479bc1115bb12d0ad8. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "0013021c486ae10be14eea20bfda2f9edd0fbc4cd28d00f022ee6bf0906bab1d",
+      "sourceObjChecksum": "7aff8c0ee0b4cccc7718e6cdf238555dffb7246f680737ca85fbbc516aca6b3f",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/fe59fe04725446479bc1115bb12d0ad8/mesh-original/LL5sketch1_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.28280234,
+          1.43673348,
+          5.34496784
+        ],
+        "max": [
+          2.03831076,
+          3.36343503,
+          6.02660656
+        ],
+        "spans": [
+          0.75550842,
+          1.9267015500000002,
+          0.6816387200000005
+        ]
+      },
+      "proposedFdi": 35,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        8.04483704287257,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8.04483704287257,
+        0,
+        0,
+        -8.04483704287257,
+        0,
+        0,
+        -13.358906845224677,
+        45.741231484450715,
+        -20.703286720639216,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-fe59fe04725446479bc1115bb12d0ad8-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000009",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.0389710617090637,
+          -2.741836212256124,
+          -9.144999999999998
+        ],
+        "max": [
+          3.0389710617090637,
+          2.741836212256124,
+          6.355000000000002
+        ],
+        "spans": [
+          6.0779421234181275,
+          5.483672424512248,
+          15.5
+        ]
+      },
+      "runtimeVertexCount": 24010,
+      "runtimeTriangleCount": 48016,
+      "runtimeByteSize": 1153672,
+      "runtimeChecksum": "ca89ca1c1c705cf2a0f41b93ff61423144935fbc7b5366d32f312578d361365a"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000010",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Mandibular Left Central Incisor",
+      "uid": "90dcbf474e5a4d97b8783b7eb2b9c4b7",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-left-central-incisor-90dcbf474e5a4d97b8783b7eb2b9c4b7",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular Left Central Incisor by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-left-central-incisor-90dcbf474e5a4d97b8783b7eb2b9c4b7. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "8400194d6ffecf8cc93f64ade66bb32a604785a79bd5cebf37919ba1c6eaa16f",
+      "sourceObjChecksum": "0270d65240fee4e50c9674aaffeb931f6c70d13677d7e42cb8acb1639e0edccb",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/90dcbf474e5a4d97b8783b7eb2b9c4b7/mesh-original/LL2sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          0.24760226,
+          1.53209686,
+          6.80007028
+        ],
+        "max": [
+          0.75501567,
+          3.41291928,
+          7.61062336
+        ],
+        "spans": [
+          0.5074134100000001,
+          1.88082242,
+          0.81055308
+        ]
+      },
+      "proposedFdi": 31,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        10.367804952048582,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.367804952048582,
+        0,
+        0,
+        -10.367804952048582,
+        0,
+        0,
+        -5.197473569833349,
+        74.7036304416235,
+        -27.389481412126084,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-90dcbf474e5a4d97b8783b7eb2b9c4b7-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000010",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.630381632466929,
+          -4.2018281183611155,
+          -11.505
+        ],
+        "max": [
+          2.630381632466929,
+          4.2018281183611155,
+          7.994999999999997
+        ],
+        "spans": [
+          5.260763264933858,
+          8.403656236722231,
+          19.5
+        ]
+      },
+      "runtimeVertexCount": 23102,
+      "runtimeTriangleCount": 46200,
+      "runtimeByteSize": 1110088,
+      "runtimeChecksum": "df1a7b7fbf43896003a5bbf79b446c9a28843b6e3ce30d0979080a82eb1e0ebf"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000011",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Mandibular Left Lateral Incisor",
+      "uid": "00fa4f74e10b4769830bf60469c65e27",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-left-lateral-incisor-00fa4f74e10b4769830bf60469c65e27",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular Left Lateral Incisor by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-left-lateral-incisor-00fa4f74e10b4769830bf60469c65e27. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "de41d3da7b6c1b960dc6305dac2c8452d88d74c1d5f7adef43e6cf192163d8fc",
+      "sourceObjChecksum": "6dcbc29b1d89c68a795df2ce4863c5cb775a6b5621b58e3d44ff9032b1b8769e",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/00fa4f74e10b4769830bf60469c65e27/mesh-original/LL1sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          -0.33008632,
+          1.4741137,
+          6.81154537
+        ],
+        "max": [
+          0.21693383,
+          3.48402476,
+          7.70842123
+        ],
+        "spans": [
+          0.54702015,
+          2.0099110600000003,
+          0.8968758599999997
+        ]
+      },
+      "proposedFdi": 32,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        9.204387382195906,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.204387382195906,
+        0,
+        0,
+        -9.204387382195906,
+        0,
+        0,
+        0.5207496756100242,
+        66.82369868147299,
+        -24.48331354020212,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-00fa4f74e10b4769830bf60469c65e27-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000011",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.517492683233456,
+          -4.12759642459005,
+          -10.915
+        ],
+        "max": [
+          2.517492683233456,
+          4.12759642459005,
+          7.584999999999999
+        ],
+        "spans": [
+          5.034985366466912,
+          8.2551928491801,
+          18.5
+        ]
+      },
+      "runtimeVertexCount": 24102,
+      "runtimeTriangleCount": 48200,
+      "runtimeByteSize": 1158088,
+      "runtimeChecksum": "86d137a2b79e370f4bf248cc8953a662c5c5b01860bbd32e2c477d509a2fb244"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000012",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Maxillary Canine",
+      "uid": "bd930c9b9da14f2a9a8c9b130b0e08a2",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-canine-bd930c9b9da14f2a9a8c9b130b0e08a2",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Canine by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-canine-bd930c9b9da14f2a9a8c9b130b0e08a2. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "cbed0e9c8053b7582ab54accef31b73fa51ea281e55d186b80636012aadd0c16",
+      "sourceObjChecksum": "f49985655cf4cdaaecac5d60c63a50172a5b8d6db74a68e09947adcb73df8cda",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/bd930c9b9da14f2a9a8c9b130b0e08a2/mesh-original/UL3sketch1_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          0.95622646,
+          3.18430113,
+          7.05460262
+        ],
+        "max": [
+          1.57301628,
+          5.16694545,
+          7.79042863
+        ],
+        "spans": [
+          0.61678982,
+          1.98264432,
+          0.7358260100000003
+        ]
+      },
+      "proposedFdi": 23,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        12.609422551393385,
+        0,
+        0,
+        0,
+        0,
+        0,
+        12.609422551393385,
+        0,
+        0,
+        -12.609422551393385,
+        0,
+        0,
+        -15.946145221851998,
+        93.59363590994477,
+        -54.65219847904944,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-bd930c9b9da14f2a9a8c9b130b0e08a2-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000012",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.8886817328889327,
+          -4.639170542197909,
+          -14.500000000000002
+        ],
+        "max": [
+          3.888681732888934,
+          4.639170542197909,
+          10.499999999999998
+        ],
+        "spans": [
+          7.777363465777867,
+          9.278341084395818,
+          25
+        ]
+      },
+      "runtimeVertexCount": 47986,
+      "runtimeTriangleCount": 95968,
+      "runtimeByteSize": 2304496,
+      "runtimeChecksum": "01b038294c5a3ec0f957b9153ccbb691329df03715bc4468c4c930fef2189418"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000013",
+      "assetState": "private_training_approved",
+      "kind": "intact_tooth",
+      "title": "Mandibular Second Molar",
+      "uid": "b77dcbc5052e4740b87cdb1964649742",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-second-molar-b77dcbc5052e4740b87cdb1964649742",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular Second Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-second-molar-b77dcbc5052e4740b87cdb1964649742. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "0ed2b404755aeea24bc3ef85f00d897b49164dbaecf0adfa5c73a56bdc91ba35",
+      "sourceObjChecksum": "519461f794e20edbbda27c8d6ffba474eb0d383234a29d6cf9f7bcd5b90c0678",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/b77dcbc5052e4740b87cdb1964649742/mesh-original/LL7sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.85634779,
+          1.89441895,
+          3.29135966
+        ],
+        "max": [
+          2.82035374,
+          3.66782808,
+          4.25107193
+        ],
+        "spans": [
+          0.9640059499999998,
+          1.7734091300000001,
+          0.9597122700000003
+        ]
+      },
+      "proposedFdi": 37,
+      "originalOrDerived": "original_runtime_conversion",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension.",
+      "originalToCanonicalTrainingMatrix": [
+        10.14994210613994,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.14994210613994,
+        0,
+        0,
+        -10.14994210613994,
+        0,
+        0,
+        -23.73412488859804,
+        38.277621989010505,
+        -29.848242667274413,
+        1
+      ],
+      "morphologyQaStatus": "VISUAL_SCREENING_PASS",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": null,
+      "runtimeFile": "dundee-b77dcbc5052e4740b87cdb1964649742-intact.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000013",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.892302291237216,
+          -4.870511989526075,
+          -10.619999999999997
+        ],
+        "max": [
+          4.892302291237216,
+          4.8705119895260705,
+          7.3800000000000034
+        ],
+        "spans": [
+          9.784604582474431,
+          9.741023979052144,
+          18
+        ]
+      },
+      "runtimeVertexCount": 27478,
+      "runtimeTriangleCount": 54952,
+      "runtimeByteSize": 1320132,
+      "runtimeChecksum": "bea0d5b3d96779d064937a318fbe23bc71a06b2ee3287396e2e60d5dc6143443"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000001000",
+      "assetState": "private_training_approved",
+      "kind": "contralateral_mirror",
+      "title": "Maxillary Canine",
+      "uid": "bd930c9b9da14f2a9a8c9b130b0e08a2",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-canine-bd930c9b9da14f2a9a8c9b130b0e08a2",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Canine by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-canine-bd930c9b9da14f2a9a8c9b130b0e08a2. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "cbed0e9c8053b7582ab54accef31b73fa51ea281e55d186b80636012aadd0c16",
+      "sourceObjChecksum": "f49985655cf4cdaaecac5d60c63a50172a5b8d6db74a68e09947adcb73df8cda",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/bd930c9b9da14f2a9a8c9b130b0e08a2/mesh-original/UL3sketch1_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          0.95622646,
+          3.18430113,
+          7.05460262
+        ],
+        "max": [
+          1.57301628,
+          5.16694545,
+          7.79042863
+        ],
+        "spans": [
+          0.61678982,
+          1.98264432,
+          0.7358260100000003
+        ]
+      },
+      "proposedFdi": 13,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Controlled OFFLINE sagittal mirror of the source FDI 23 training mesh to FDI 13. Triangle winding was reversed after reflection; runtime vertex normals were recomputed; closed-manifold topology was checked. Exact symmetry is an educational derivation, not a natural contralateral specimen. Source units and patient/source-image provenance remain unknown; not expert reviewed.",
+      "originalToCanonicalTrainingMatrix": [
+        12.609422551393385,
+        0,
+        0,
+        0,
+        0,
+        0,
+        12.609422551393385,
+        0,
+        0,
+        -12.609422551393385,
+        0,
+        0,
+        -15.946145221851998,
+        93.59363590994477,
+        -54.65219847904944,
+        1
+      ],
+      "morphologyQaStatus": "OFFLINE_MIRROR_TOPOLOGY_PASS_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000012",
+      "runtimeFile": "dundee-bd930c9b9da14f2a9a8c9b130b0e08a2-mirror-fdi-13.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000001000",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.888681732888934,
+          -4.639170542197909,
+          -14.500000000000002
+        ],
+        "max": [
+          3.8886817328889327,
+          4.639170542197909,
+          10.499999999999998
+        ],
+        "spans": [
+          7.777363465777867,
+          9.278341084395818,
+          25
+        ]
+      },
+      "runtimeVertexCount": 47986,
+      "runtimeTriangleCount": 95968,
+      "mirrorOfFdi": 23,
+      "offlineMirrorTopology": {
+        "triangleCount": 95968,
+        "degenerateTriangles": 0,
+        "openBoundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "sameDirectionTwoFaceEdges": 0,
+        "signedMeshVolume": 693.8706748461047
+      },
+      "runtimeByteSize": 2304736,
+      "runtimeChecksum": "242f270811c697a5a89e05eb42bddfc73331e6293efc6e0f5e65a98d4ada2245"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000001001",
+      "assetState": "private_training_approved",
+      "kind": "contralateral_mirror",
+      "title": "Mandibular Second Molar",
+      "uid": "b77dcbc5052e4740b87cdb1964649742",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-second-molar-b77dcbc5052e4740b87cdb1964649742",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular Second Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-second-molar-b77dcbc5052e4740b87cdb1964649742. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "0ed2b404755aeea24bc3ef85f00d897b49164dbaecf0adfa5c73a56bdc91ba35",
+      "sourceObjChecksum": "519461f794e20edbbda27c8d6ffba474eb0d383234a29d6cf9f7bcd5b90c0678",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/b77dcbc5052e4740b87cdb1964649742/mesh-original/LL7sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.85634779,
+          1.89441895,
+          3.29135966
+        ],
+        "max": [
+          2.82035374,
+          3.66782808,
+          4.25107193
+        ],
+        "spans": [
+          0.9640059499999998,
+          1.7734091300000001,
+          0.9597122700000003
+        ]
+      },
+      "proposedFdi": 47,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Controlled OFFLINE sagittal mirror of the source FDI 37 training mesh to FDI 47. Triangle winding was reversed after reflection; runtime vertex normals were recomputed; closed-manifold topology was checked. Exact symmetry is an educational derivation, not a natural contralateral specimen. Source units and patient/source-image provenance remain unknown; not expert reviewed.",
+      "originalToCanonicalTrainingMatrix": [
+        10.14994210613994,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.14994210613994,
+        0,
+        0,
+        -10.14994210613994,
+        0,
+        0,
+        -23.73412488859804,
+        38.277621989010505,
+        -29.848242667274413,
+        1
+      ],
+      "morphologyQaStatus": "OFFLINE_MIRROR_TOPOLOGY_PASS_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000013",
+      "runtimeFile": "dundee-b77dcbc5052e4740b87cdb1964649742-mirror-fdi-47.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000001001",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.892302291237216,
+          -4.870511989526075,
+          -10.619999999999997
+        ],
+        "max": [
+          4.892302291237216,
+          4.8705119895260705,
+          7.3800000000000034
+        ],
+        "spans": [
+          9.784604582474431,
+          9.741023979052144,
+          18
+        ]
+      },
+      "runtimeVertexCount": 27478,
+      "runtimeTriangleCount": 54952,
+      "mirrorOfFdi": 37,
+      "offlineMirrorTopology": {
+        "triangleCount": 54952,
+        "degenerateTriangles": 0,
+        "openBoundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "sameDirectionTwoFaceEdges": 0,
+        "signedMeshVolume": 710.1861443276434
+      },
+      "runtimeByteSize": 1320376,
+      "runtimeChecksum": "784f708050f05f1a97b011bb6949520085b1f131c001aeea9ad917aa3aab604f"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000101",
+      "assetState": "private_training_approved",
+      "kind": "prep",
+      "title": "Maxillary First Molar",
+      "uid": "e719a474ef7e4bd7abec508f85f1e984",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "c09984927d729d9ec1a698614fdea32ebbb42c7c3d523f27f113d533e87692be",
+      "sourceObjChecksum": "c60d80897f30a31cbd7b3bdab9179c02f71c474b89ec35612910b494d1f48c94",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e719a474ef7e4bd7abec508f85f1e984/mesh-original/UL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.6476829,
+          3.30910158,
+          5.07781171
+        ],
+        "max": [
+          2.68708968,
+          5.09402227,
+          6.07118845
+        ],
+        "spans": [
+          1.0394067800000002,
+          1.7849206899999999,
+          0.9933767400000004
+        ]
+      },
+      "proposedFdi": 26,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Occlusal reduction and a modest convergent sidewall display were applied; cervical position and root context are retained. Target for this exercise: 3.6 mm stump height above the cervical datum. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.524232698540796,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.524232698540796,
+        0,
+        0,
+        -9.524232698540796,
+        0,
+        0,
+        -20.642691373587027,
+        53.092835939954284,
+        -41.376653471029016,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000003",
+      "runtimeFile": "r3-prep-crown-26.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000101",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.949776020580501,
+          -4.730575614538932,
+          -9.860000000000001
+        ],
+        "max": [
+          4.593892112931921,
+          4.730575614538932,
+          3.6
+        ],
+        "spans": [
+          9.543668133512423,
+          9.461151229077863,
+          13.46
+        ]
+      },
+      "runtimeVertexCount": 23116,
+      "runtimeTriangleCount": 46228,
+      "runtimeByteSize": 1110700,
+      "runtimeChecksum": "e430a8063d48f564d42e713aedda8a0da87b2836e3b7fd88e01cf0804f15ebeb"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000102",
+      "assetState": "private_training_approved",
+      "kind": "prep",
+      "title": "Mandibular First Molar",
+      "uid": "e1c919d6603846eca873154eeededdd6",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "7633ff26878ba7f160bb6b5d5ebc586f8ca776f24afe284daf3373ecbccee88a",
+      "sourceObjChecksum": "403a4e3b7b7e6564c9bce66c17b11b837c2d0eb72cd6785c63d3fc6fe5e0b3b9",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e1c919d6603846eca873154eeededdd6/mesh-original/LL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.47066319,
+          1.67118227,
+          4.28159236
+        ],
+        "max": [
+          2.54416155,
+          3.49685525,
+          5.50292348
+        ],
+        "spans": [
+          1.07349836,
+          1.8256729799999998,
+          1.2213311199999994
+        ]
+      },
+      "proposedFdi": 36,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Occlusal reduction and a modest convergent sidewall display were applied; cervical position and root context are retained. Target for this exercise: 3.5 mm stump height above the cervical datum. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.037763159533643,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.037763159533643,
+        0,
+        0,
+        -9.037763159533643,
+        0,
+        0,
+        -18.142517563578117,
+        44.215068396312695,
+        -24.838749552671803,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000005",
+      "runtimeFile": "r3-prep-crown-36.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000102",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.429955365853697,
+          -5.034212099926217,
+          -9.734999999999998
+        ],
+        "max": [
+          4.838656529276126,
+          5.519050700963983,
+          3.5
+        ],
+        "spans": [
+          9.268611895129823,
+          10.553262800890199,
+          13.234999999999998
+        ]
+      },
+      "runtimeVertexCount": 19631,
+      "runtimeTriangleCount": 39258,
+      "runtimeByteSize": 943400,
+      "runtimeChecksum": "3b11beae960913076793f6dc0a22a82848618524a15a9b6a99952da6e90a4a35"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000103",
+      "assetState": "private_training_approved",
+      "kind": "prep",
+      "title": "Maxillary First Premolar",
+      "uid": "f9b48a29d34f4923b683433f030c5c70",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-premolar-f9b48a29d34f4923b683433f030c5c70",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Premolar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-premolar-f9b48a29d34f4923b683433f030c5c70. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "b1368ef605a24a38321298a2596f0ebb8a74a6b3d7a834dc1c666cc71d9b5627",
+      "sourceObjChecksum": "14dee9609ee9fdf9f4307be2c23989810d7d7e72dec9ef9a798ec4cae8215de6",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/f9b48a29d34f4923b683433f030c5c70/mesh-original/UL4sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.14402604,
+          3.30226254,
+          6.57801818
+        ],
+        "max": [
+          1.9713068,
+          5.10662794,
+          7.23919343
+        ],
+        "spans": [
+          0.8272807600000001,
+          1.8043654,
+          0.6611752500000003
+        ]
+      },
+      "proposedFdi": 24,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Premolar abutment reduction was derived by clipping the source crown and tapering the coronal walls. Target for this exercise: 3.0 mm preparation height. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.144489248131226,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.144489248131226,
+        0,
+        0,
+        -9.144489248131226,
+        0,
+        0,
+        -14.244063829865057,
+        63.17567150339948,
+        -39.76750429153651,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000001",
+      "runtimeFile": "r3-prep-bridge-24.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000103",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.782530007502914,
+          -3.0230549823777353,
+          -9.569999999999997
+        ],
+        "max": [
+          3.782530007502916,
+          3.0230549823777433,
+          3
+        ],
+        "spans": [
+          7.56506001500583,
+          6.046109964755479,
+          12.569999999999997
+        ]
+      },
+      "runtimeVertexCount": 20962,
+      "runtimeTriangleCount": 41920,
+      "runtimeByteSize": 1007288,
+      "runtimeChecksum": "6bce47cb3f14bf12aa8aec9f6aae9236fd15aadcc680aa074001f04a3705bbb6"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000104",
+      "assetState": "private_training_approved",
+      "kind": "prep",
+      "title": "Mandibular First Molar",
+      "uid": "e1c919d6603846eca873154eeededdd6",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "7633ff26878ba7f160bb6b5d5ebc586f8ca776f24afe284daf3373ecbccee88a",
+      "sourceObjChecksum": "403a4e3b7b7e6564c9bce66c17b11b837c2d0eb72cd6785c63d3fc6fe5e0b3b9",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e1c919d6603846eca873154eeededdd6/mesh-original/LL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.47066319,
+          1.67118227,
+          4.28159236
+        ],
+        "max": [
+          2.54416155,
+          3.49685525,
+          5.50292348
+        ],
+        "spans": [
+          1.07349836,
+          1.8256729799999998,
+          1.2213311199999994
+        ]
+      },
+      "proposedFdi": 36,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "A central intracoronal basin was lowered while the original cusp envelope was retained, visibly separating this preparation from a crown or broad Onlay form. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.037763159533643,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.037763159533643,
+        0,
+        0,
+        -9.037763159533643,
+        0,
+        0,
+        -18.142517563578117,
+        44.215068396312695,
+        -24.838749552671803,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000005",
+      "runtimeFile": "r3-prep-inlay-36.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000104",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.851011964913892,
+          -5.519050700963975,
+          -9.734999999999998
+        ],
+        "max": [
+          4.851011964913893,
+          5.519050700963983,
+          6.669593776862245
+        ],
+        "spans": [
+          9.702023929827785,
+          11.038101401927957,
+          16.404593776862242
+        ]
+      },
+      "runtimeVertexCount": 27594,
+      "runtimeTriangleCount": 55184,
+      "runtimeByteSize": 1325640,
+      "runtimeChecksum": "15702e46fdb4393dcd3131c01fcbd4c9ce38c651a3200da8709bf6c222023d58"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000105",
+      "assetState": "private_training_approved",
+      "kind": "prep",
+      "title": "Maxillary First Molar",
+      "uid": "e719a474ef7e4bd7abec508f85f1e984",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "c09984927d729d9ec1a698614fdea32ebbb42c7c3d523f27f113d533e87692be",
+      "sourceObjChecksum": "c60d80897f30a31cbd7b3bdab9179c02f71c474b89ec35612910b494d1f48c94",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e719a474ef7e4bd7abec508f85f1e984/mesh-original/UL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.6476829,
+          3.30910158,
+          5.07781171
+        ],
+        "max": [
+          2.68708968,
+          5.09402227,
+          6.07118845
+        ],
+        "spans": [
+          1.0394067800000002,
+          1.7849206899999999,
+          0.9933767400000004
+        ]
+      },
+      "proposedFdi": 26,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "A broader occlusal and cuspal reduction visibly lowers the posterior crown envelope. Target for this exercise: 2.4 mm remaining coronal height. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.524232698540796,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.524232698540796,
+        0,
+        0,
+        -9.524232698540796,
+        0,
+        0,
+        -20.642691373587027,
+        53.092835939954284,
+        -41.376653471029016,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000003",
+      "runtimeFile": "r3-prep-onlay-26.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000105",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.949776020580501,
+          -4.730575614538932,
+          -9.860000000000001
+        ],
+        "max": [
+          4.593892112931921,
+          4.730575614538932,
+          2.4
+        ],
+        "spans": [
+          9.543668133512423,
+          9.461151229077863,
+          12.260000000000002
+        ]
+      },
+      "runtimeVertexCount": 21064,
+      "runtimeTriangleCount": 42124,
+      "runtimeByteSize": 1012204,
+      "runtimeChecksum": "a7d8f3f8315d12604b72ca7243850b06b2546c0d5fa3bdc9e56cf523a2b32a18"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000106",
+      "assetState": "private_training_approved",
+      "kind": "prep",
+      "title": "Maxillary Left Central Incisor",
+      "uid": "c8a7c2d9280d4c92bc651cfa1459866a",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-left-central-incisor-c8a7c2d9280d4c92bc651cfa1459866a",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Left Central Incisor by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-left-central-incisor-c8a7c2d9280d4c92bc651cfa1459866a. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "0b2a312698292424025878cbc4fbb4dbedafd5bc1cbc376b1355759c9fcca7d4",
+      "sourceObjChecksum": "737b9714c459a00e74711d45b59ace3d4884265d5e0fd0f861dcbfa23bc2c59c",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/c8a7c2d9280d4c92bc651cfa1459866a/mesh-original/UL1sketch1_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          -0.2840574,
+          3.16718745,
+          7.41190624
+        ],
+        "max": [
+          0.43131262,
+          5.1225996,
+          8.22623157
+        ],
+        "spans": [
+          0.7153700199999999,
+          1.95541215,
+          0.8143253299999991
+        ]
+      },
+      "proposedFdi": 21,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "A shallow facial surface reduction was applied while preserving the anterior tooth outline, incisal edge, and cervical region. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        10.739423911219944,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.739423911219944,
+        0,
+        0,
+        -10.739423911219944,
+        0,
+        0,
+        -0.7907181153599765,
+        83.97229556183335,
+        -46.19376863184572,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000006",
+      "runtimeFile": "r3-prep-veneer-21.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000106",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.8413309490789445,
+          -4.3726924602570305,
+          -12.179999999999996
+        ],
+        "max": [
+          3.8413309490789445,
+          4.362634882369936,
+          8.820000000000002
+        ],
+        "spans": [
+          7.682661898157889,
+          8.735327342626967,
+          21
+        ]
+      },
+      "runtimeVertexCount": 21502,
+      "runtimeTriangleCount": 43000,
+      "runtimeByteSize": 1033224,
+      "runtimeChecksum": "32b9dda48d3ce03b3aaa73943f5479c71a4cf100d1e2ab46ff5016902372aa58"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000107",
+      "assetState": "private_training_approved",
+      "kind": "crown",
+      "title": "Maxillary First Molar",
+      "uid": "e719a474ef7e4bd7abec508f85f1e984",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "c09984927d729d9ec1a698614fdea32ebbb42c7c3d523f27f113d533e87692be",
+      "sourceObjChecksum": "c60d80897f30a31cbd7b3bdab9179c02f71c474b89ec35612910b494d1f48c94",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e719a474ef7e4bd7abec508f85f1e984/mesh-original/UL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.6476829,
+          3.30910158,
+          5.07781171
+        ],
+        "max": [
+          2.68708968,
+          5.09402227,
+          6.07118845
+        ],
+        "spans": [
+          1.0394067800000002,
+          1.7849206899999999,
+          0.9933767400000004
+        ]
+      },
+      "proposedFdi": 26,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "The intact source crown contour was separated at the cervical training datum to create an editable anatomical proposal aligned to the exercise preparation. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.524232698540796,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.524232698540796,
+        0,
+        0,
+        -9.524232698540796,
+        0,
+        0,
+        -20.642691373587027,
+        53.092835939954284,
+        -41.376653471029016,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000003",
+      "runtimeFile": "r3-crown-proposal-26.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000107",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.191520139754781,
+          -4.480465644666824,
+          -0.35
+        ],
+        "max": [
+          4.949776020580501,
+          3.605502070826283,
+          7.139999999999998
+        ],
+        "spans": [
+          9.141296160335282,
+          8.085967715493107,
+          7.4899999999999975
+        ]
+      },
+      "runtimeVertexCount": 12658,
+      "runtimeTriangleCount": 25312,
+      "runtimeByteSize": 608712,
+      "runtimeChecksum": "8cb91c062a859a940086159b372ebb0789b13ba88bdfc68f6e94a6cbe4e6ff85"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000108",
+      "assetState": "private_training_approved",
+      "kind": "crown",
+      "title": "Mandibular First Molar",
+      "uid": "e1c919d6603846eca873154eeededdd6",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "7633ff26878ba7f160bb6b5d5ebc586f8ca776f24afe284daf3373ecbccee88a",
+      "sourceObjChecksum": "403a4e3b7b7e6564c9bce66c17b11b837c2d0eb72cd6785c63d3fc6fe5e0b3b9",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e1c919d6603846eca873154eeededdd6/mesh-original/LL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.47066319,
+          1.67118227,
+          4.28159236
+        ],
+        "max": [
+          2.54416155,
+          3.49685525,
+          5.50292348
+        ],
+        "spans": [
+          1.07349836,
+          1.8256729799999998,
+          1.2213311199999994
+        ]
+      },
+      "proposedFdi": 36,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "The intact source crown contour was separated at the cervical training datum to create an editable anatomical proposal aligned to the exercise preparation. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.037763159533643,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.037763159533643,
+        0,
+        0,
+        -9.037763159533643,
+        0,
+        0,
+        -18.142517563578117,
+        44.215068396312695,
+        -24.838749552671803,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000005",
+      "runtimeFile": "r3-crown-proposal-36.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000108",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.851011964913892,
+          -5.519050700963975,
+          -0.35
+        ],
+        "max": [
+          4.851011964913893,
+          4.4145626562321185,
+          6.765000000000002
+        ],
+        "spans": [
+          9.702023929827785,
+          9.933613357196094,
+          7.115000000000002
+        ]
+      },
+      "runtimeVertexCount": 13811,
+      "runtimeTriangleCount": 27618,
+      "runtimeByteSize": 664052,
+      "runtimeChecksum": "e7fadc1365cec0d8feb1e51afff5eb8bebd6d8ad9db6534663303e7ecf95b381"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000109",
+      "assetState": "private_training_approved",
+      "kind": "bridge",
+      "title": "Maxillary First Molar",
+      "uid": "e719a474ef7e4bd7abec508f85f1e984",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "c09984927d729d9ec1a698614fdea32ebbb42c7c3d523f27f113d533e87692be",
+      "sourceObjChecksum": "c60d80897f30a31cbd7b3bdab9179c02f71c474b89ec35612910b494d1f48c94",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e719a474ef7e4bd7abec508f85f1e984/mesh-original/UL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.6476829,
+          3.30910158,
+          5.07781171
+        ],
+        "max": [
+          2.68708968,
+          5.09402227,
+          6.07118845
+        ],
+        "spans": [
+          1.0394067800000002,
+          1.7849206899999999,
+          0.9933767400000004
+        ]
+      },
+      "proposedFdi": 26,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Three anatomical crown/pontic forms were linked with two short training connectors; member IDs are retained in GLB node extras and Case Package workflow metadata. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.524232698540796,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.524232698540796,
+        0,
+        0,
+        -9.524232698540796,
+        0,
+        0,
+        -20.642691373587027,
+        53.092835939954284,
+        -41.376653471029016,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000003",
+      "runtimeFile": "r3-bridge-24-26-connected.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000109",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -11.543406166511506,
+          -4.480465644666824,
+          -0.35
+        ],
+        "max": [
+          13.5497760205805,
+          3.605502070826283,
+          7.139999999999998
+        ],
+        "spans": [
+          25.093182187092005,
+          8.085967715493107,
+          7.4899999999999975
+        ]
+      },
+      "runtimeVertexCount": 34082,
+      "runtimeTriangleCount": 68144,
+      "runtimeByteSize": 1640752,
+      "runtimeChecksum": "b1fb071adb9177d71c5e1ad9696d1731f7350e2e5284bcadef62335e2d8a04c1"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000110",
+      "assetState": "private_training_approved",
+      "kind": "inlay",
+      "title": "Mandibular First Molar",
+      "uid": "e1c919d6603846eca873154eeededdd6",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "7633ff26878ba7f160bb6b5d5ebc586f8ca776f24afe284daf3373ecbccee88a",
+      "sourceObjChecksum": "403a4e3b7b7e6564c9bce66c17b11b837c2d0eb72cd6785c63d3fc6fe5e0b3b9",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e1c919d6603846eca873154eeededdd6/mesh-original/LL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.47066319,
+          1.67118227,
+          4.28159236
+        ],
+        "max": [
+          2.54416155,
+          3.49685525,
+          5.50292348
+        ],
+        "spans": [
+          1.07349836,
+          1.8256729799999998,
+          1.2213311199999994
+        ]
+      },
+      "proposedFdi": 36,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "An occlusal patch samples the preserved tooth surface inside a compact central outline and has a separate training underside; it is not an automatic internal fit. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.037763159533643,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.037763159533643,
+        0,
+        0,
+        -9.037763159533643,
+        0,
+        0,
+        -18.142517563578117,
+        44.215068396312695,
+        -24.838749552671803,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000005",
+      "runtimeFile": "r3-inlay-36-occlusal.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000110",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.35,
+          -2.9,
+          3.1971455310784753
+        ],
+        "max": [
+          2.35,
+          2.9,
+          6.808259870841252
+        ],
+        "spans": [
+          4.7,
+          5.8,
+          3.6111143397627767
+        ]
+      },
+      "runtimeVertexCount": 1154,
+      "runtimeTriangleCount": 2304,
+      "runtimeByteSize": 56544,
+      "runtimeChecksum": "88280198d929eba3fd01bb46f293954739d3aae79fc544d99afcad6e83d3316a"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000111",
+      "assetState": "private_training_approved",
+      "kind": "onlay",
+      "title": "Maxillary First Molar",
+      "uid": "e719a474ef7e4bd7abec508f85f1e984",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "c09984927d729d9ec1a698614fdea32ebbb42c7c3d523f27f113d533e87692be",
+      "sourceObjChecksum": "c60d80897f30a31cbd7b3bdab9179c02f71c474b89ec35612910b494d1f48c94",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e719a474ef7e4bd7abec508f85f1e984/mesh-original/UL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.6476829,
+          3.30910158,
+          5.07781171
+        ],
+        "max": [
+          2.68708968,
+          5.09402227,
+          6.07118845
+        ],
+        "spans": [
+          1.0394067800000002,
+          1.7849206899999999,
+          0.9933767400000004
+        ]
+      },
+      "proposedFdi": 26,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "A wider occlusal patch samples the tooth cusp surface and covers a broader region than the Inlay exercise. Target for this exercise: the outer shell spans the central and cusp-tip region. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.524232698540796,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.524232698540796,
+        0,
+        0,
+        -9.524232698540796,
+        0,
+        0,
+        -20.642691373587027,
+        53.092835939954284,
+        -41.376653471029016,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000003",
+      "runtimeFile": "r3-onlay-26-cuspal.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000111",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.8,
+          -3.5,
+          -1.5
+        ],
+        "max": [
+          3.8,
+          3.5,
+          7.1770315518772465
+        ],
+        "spans": [
+          7.6,
+          7,
+          8.677031551877246
+        ]
+      },
+      "runtimeVertexCount": 1154,
+      "runtimeTriangleCount": 2032,
+      "runtimeByteSize": 53236,
+      "runtimeChecksum": "9f46511600b392a7412b3cf43e3c86a1e1ac9ede55ecc661ed091246ebf2b9f9"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000112",
+      "assetState": "private_training_approved",
+      "kind": "veneer",
+      "title": "Maxillary Left Central Incisor",
+      "uid": "c8a7c2d9280d4c92bc651cfa1459866a",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-left-central-incisor-c8a7c2d9280d4c92bc651cfa1459866a",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Left Central Incisor by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-left-central-incisor-c8a7c2d9280d4c92bc651cfa1459866a. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "0b2a312698292424025878cbc4fbb4dbedafd5bc1cbc376b1355759c9fcca7d4",
+      "sourceObjChecksum": "737b9714c459a00e74711d45b59ace3d4884265d5e0fd0f861dcbfa23bc2c59c",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/c8a7c2d9280d4c92bc651cfa1459866a/mesh-original/UL1sketch1_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          -0.2840574,
+          3.16718745,
+          7.41190624
+        ],
+        "max": [
+          0.43131262,
+          5.1225996,
+          8.22623157
+        ],
+        "spans": [
+          0.7153700199999999,
+          1.95541215,
+          0.8143253299999991
+        ]
+      },
+      "proposedFdi": 21,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "A thin source-surface shell was sampled from the incisal/facial surface for CAD editing. Target for this exercise: 0.65 mm display depth; not a clinical thickness prescription. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        10.739423911219944,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.739423911219944,
+        0,
+        0,
+        -10.739423911219944,
+        0,
+        0,
+        -0.7907181153599765,
+        83.97229556183335,
+        -46.19376863184572,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000006",
+      "runtimeFile": "r3-veneer-21-facial.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000112",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.35,
+          0.361651040558327,
+          0.15000000000000036
+        ],
+        "max": [
+          3.35,
+          1000,
+          8.15
+        ],
+        "spans": [
+          6.7,
+          999.6383489594417,
+          8
+        ]
+      },
+      "runtimeVertexCount": 3330,
+      "runtimeTriangleCount": 2856,
+      "runtimeByteSize": 115384,
+      "runtimeChecksum": "0239afe1a6612dc44d4a37c434410cdfd6f22ac52a40238ccd7209185c992572"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000113",
+      "assetState": "private_training_approved",
+      "kind": "prep",
+      "title": "Maxillary First Molar",
+      "uid": "e719a474ef7e4bd7abec508f85f1e984",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "c09984927d729d9ec1a698614fdea32ebbb42c7c3d523f27f113d533e87692be",
+      "sourceObjChecksum": "c60d80897f30a31cbd7b3bdab9179c02f71c474b89ec35612910b494d1f48c94",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e719a474ef7e4bd7abec508f85f1e984/mesh-original/UL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.6476829,
+          3.30910158,
+          5.07781171
+        ],
+        "max": [
+          2.68708968,
+          5.09402227,
+          6.07118845
+        ],
+        "spans": [
+          1.0394067800000002,
+          1.7849206899999999,
+          0.9933767400000004
+        ]
+      },
+      "proposedFdi": 26,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "A duplicate named reference to the same source-derived preparation form keeps the bridge abutment asset ID stable in the catalog.",
+      "originalToCanonicalTrainingMatrix": [
+        9.524232698540796,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.524232698540796,
+        0,
+        0,
+        -9.524232698540796,
+        0,
+        0,
+        -20.642691373587027,
+        53.092835939954284,
+        -41.376653471029016,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000003",
+      "runtimeFile": "r3-prep-bridge-26.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000101",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.949776020580501,
+          -4.730575614538932,
+          -9.860000000000001
+        ],
+        "max": [
+          4.593892112931921,
+          4.730575614538932,
+          3.6
+        ],
+        "spans": [
+          9.543668133512423,
+          9.461151229077863,
+          13.46
+        ]
+      },
+      "runtimeVertexCount": 23116,
+      "runtimeTriangleCount": 46228,
+      "runtimeByteSize": 1110700,
+      "runtimeChecksum": "e430a8063d48f564d42e713aedda8a0da87b2836e3b7fd88e01cf0804f15ebeb"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000114",
+      "assetState": "private_training_approved",
+      "kind": "crown",
+      "title": "Maxillary First Molar",
+      "uid": "e719a474ef7e4bd7abec508f85f1e984",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "c09984927d729d9ec1a698614fdea32ebbb42c7c3d523f27f113d533e87692be",
+      "sourceObjChecksum": "c60d80897f30a31cbd7b3bdab9179c02f71c474b89ec35612910b494d1f48c94",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e719a474ef7e4bd7abec508f85f1e984/mesh-original/UL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.6476829,
+          3.30910158,
+          5.07781171
+        ],
+        "max": [
+          2.68708968,
+          5.09402227,
+          6.07118845
+        ],
+        "spans": [
+          1.0394067800000002,
+          1.7849206899999999,
+          0.9933767400000004
+        ]
+      },
+      "proposedFdi": 26,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "The source-derived anatomical proposal is shifted coronally as a placement checkpoint. The offset is a starting-state cue for this exercise, not a fit measurement. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.524232698540796,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.524232698540796,
+        0,
+        0,
+        -9.524232698540796,
+        0,
+        0,
+        -20.642691373587027,
+        53.092835939954284,
+        -41.376653471029016,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000003",
+      "runtimeFile": "r3-crown-proposal-26-placement.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000114",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.191520139754781,
+          -4.480465644666824,
+          4.15
+        ],
+        "max": [
+          4.949776020580501,
+          3.605502070826283,
+          11.639999999999997
+        ],
+        "spans": [
+          9.141296160335282,
+          8.085967715493107,
+          7.489999999999997
+        ]
+      },
+      "runtimeVertexCount": 12658,
+      "runtimeTriangleCount": 25312,
+      "runtimeByteSize": 608712,
+      "runtimeChecksum": "b3d419ac30496cfef6e69f3ed71293d94370d6fa1429eb8935339d2f1016e73b"
+    },
+    {
+      "id": "d4000000-0000-5000-8000-000000000115",
+      "assetState": "private_training_approved",
+      "kind": "crown",
+      "title": "Maxillary First Molar",
+      "uid": "e719a474ef7e4bd7abec508f85f1e984",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "c09984927d729d9ec1a698614fdea32ebbb42c7c3d523f27f113d533e87692be",
+      "sourceObjChecksum": "c60d80897f30a31cbd7b3bdab9179c02f71c474b89ec35612910b494d1f48c94",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e719a474ef7e4bd7abec508f85f1e984/mesh-original/UL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.6476829,
+          3.30910158,
+          5.07781171
+        ],
+        "max": [
+          2.68708968,
+          5.09402227,
+          6.07118845
+        ],
+        "spans": [
+          1.0394067800000002,
+          1.7849206899999999,
+          0.9933767400000004
+        ]
+      },
+      "proposedFdi": 26,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "A small occlusal contour adjustment to the source-derived anatomical proposal provides a separate near-final section/thickness checkpoint. The change is an exercise state, not a clinical recommendation. Derived from the preserved source OBJ; geometry is exercise-specific and is not a universal preparation or clinical recommendation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.524232698540796,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.524232698540796,
+        0,
+        0,
+        -9.524232698540796,
+        0,
+        0,
+        -20.642691373587027,
+        53.092835939954284,
+        -41.376653471029016,
+        1
+      ],
+      "morphologyQaStatus": "DERIVED_TRAINING_GEOMETRY_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000003",
+      "runtimeFile": "r3-crown-proposal-26-near-final.glb",
+      "runtimePath": "/api/private-training-assets/d4000000-0000-5000-8000-000000000115",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.191520139754781,
+          -4.480465644666824,
+          -0.35
+        ],
+        "max": [
+          4.949776020580501,
+          3.605502070826283,
+          7.1075458258893995
+        ],
+        "spans": [
+          9.141296160335282,
+          8.085967715493107,
+          7.457545825889399
+        ]
+      },
+      "runtimeVertexCount": 12658,
+      "runtimeTriangleCount": 25312,
+      "runtimeByteSize": 608712,
+      "runtimeChecksum": "d646fdcf68df9cf23b246357b336ed3952b02c3b5aaeac39aaa82c9de6cac49a"
+    }
+  ]
+}

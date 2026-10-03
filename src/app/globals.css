@@ -6,124 +6,758 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-surface-blue: var(--surface-blue);
+  --color-popover: var(--surface-raised);
+  --color-popover-foreground: var(--foreground);
+  --color-primary: var(--accent-strong);
+  --color-primary-foreground: var(--accent-foreground);
+  --color-secondary: var(--surface-soft);
+  --color-secondary-foreground: var(--foreground);
+  --color-muted: var(--surface-soft);
+  --color-muted-foreground: var(--muted);
+  --color-accent: var(--surface-soft);
+  --color-accent-foreground: var(--foreground);
+  --color-destructive: var(--danger);
   --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
-  --color-card: var(--card);
-  --radius-sm: calc(var(--radius) * 0.6);
-  --radius-md: calc(var(--radius) * 0.8);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
+  --color-input: var(--border);
+  --color-ring: var(--accent-strong);
+  --font-sans: var(--font-manrope);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-heading: var(--font-source-serif);
+  --radius-sm: 0.4rem;
+  --radius-md: 0.6rem;
+  --radius-lg: 0.8rem;
+  --radius-xl: 1rem;
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  color-scheme: light;
+  --background: #f4f7f5;
+  --foreground: #20313a;
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+  --surface-soft: #edf5f2;
+  --surface-blue: #edf4f7;
+  --border: #d9e4e0;
+  --muted: #687980;
+  --accent: #8bd5c6;
+  --accent-soft: #e5f5f0;
+  --accent-strong: #287f75;
+  --accent-foreground: #ffffff;
+  --accent-blue: #9ebfcd;
+  --danger: #b4514d;
+  --ring: #287f75;
+  --sidebar: #f8faf8;
+  --sidebar-foreground: #20313a;
+  --sidebar-border: #d9e4e0;
+  --sidebar-active: #e5f3ef;
+  --radius: 0.85rem;
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  color-scheme: dark;
+  --background: #10191d;
+  --foreground: #e7efee;
+  --surface: #162329;
+  --surface-raised: #1b2a30;
+  --surface-soft: #1b2b30;
+  --surface-blue: #1c2d34;
+  --border: #304249;
+  --muted: #9aabae;
+  --accent: #76cdbc;
+  --accent-soft: #203a39;
+  --accent-strong: #56b6a5;
+  --accent-foreground: #10201f;
+  --accent-blue: #83aebc;
+  --danger: #e1847e;
+  --ring: #72c9b8;
+  --sidebar: #131f24;
+  --sidebar-foreground: #e7efee;
+  --sidebar-border: #2b3c42;
+  --sidebar-active: #213833;
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  html {
-    @apply font-sans;
-  }
+  * { @apply border-border outline-ring/40; }
+  html { @apply font-sans; }
+  body { @apply bg-background text-foreground; font-family: var(--font-manrope), sans-serif; }
+  h1, h2, h3, .font-heading { font-family: var(--font-source-serif), Georgia, serif; }
+  button, input, select, textarea { font-family: inherit; }
+  :focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+  ::selection { background: color-mix(in srgb, var(--accent) 48%, transparent); }
 }
+
+.app-surface { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; box-shadow: 0 2px 10px rgb(24 52 48 / 3%); }
+.dark .app-surface { box-shadow: none; }
+.page-eyebrow { color: var(--accent-strong); font-size: 0.68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.dark .page-eyebrow { color: var(--accent); }
+
+/* CAD workspace hierarchy */
+[data-cad-workspace] .cad-viewport-shell {
+  background: #0d171b;
+  color: #e7efee;
+  border-inline: 1px solid rgb(124 158 163 / 14%);
+}
+[data-cad-workspace] .cad-scene-panel,
+[data-cad-workspace] .cad-right-panel {
+  background: var(--surface-raised);
+}
+[data-cad-workspace] .cad-scene-panel > div:first-child,
+[data-cad-workspace] .cad-right-panel-header {
+  min-height: 44px;
+  background: color-mix(in srgb, var(--surface-raised) 88%, var(--surface-blue));
+}
+
+.cad-scene-object {
+  border: 1px solid transparent;
+  border-left-width: 2px;
+}
+.cad-scene-object[data-selected="true"] {
+  background: color-mix(in srgb, var(--accent-strong) 13%, var(--surface)) !important;
+  border-color: color-mix(in srgb, var(--accent-strong) 42%, var(--border));
+  border-left-color: var(--accent-strong);
+  box-shadow: 0 3px 12px rgb(0 0 0 / 10%);
+}
+.cad-scene-object[data-category="reference"] > button:first-child,
+.cad-scene-object[data-category="helper"] > button:first-child,
+.cad-scene-object[data-category="source"] > button:first-child {
+  color: var(--muted);
+}
+.cad-scene-category {
+  flex: none;
+  max-width: 82px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 1px 5px;
+  color: var(--muted);
+  background: var(--surface-blue);
+  font-size: 8px;
+  font-weight: 650;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cad-scene-category[data-category="preparation"] {
+  color: var(--accent-strong);
+  border-color: color-mix(in srgb, var(--accent-strong) 28%, var(--border));
+  background: color-mix(in srgb, var(--accent-strong) 8%, var(--surface));
+}
+.cad-scene-category[data-category="restoration"] {
+  color: #637f8d;
+  border-color: color-mix(in srgb, var(--accent-blue) 42%, var(--border));
+  background: color-mix(in srgb, var(--accent-blue) 11%, var(--surface));
+}
+.cad-scene-category[data-category="reference"],
+.cad-scene-category[data-category="helper"] {
+  color: #698797;
+  border-color: color-mix(in srgb, #698797 32%, var(--border));
+  background: color-mix(in srgb, #698797 9%, var(--surface));
+}
+.cad-scene-category[data-category="antagonist"] {
+  color: #a7792f;
+  border-color: color-mix(in srgb, #b98434 30%, var(--border));
+  background: color-mix(in srgb, #b98434 9%, var(--surface));
+}
+.dark .cad-scene-category[data-category="reference"],
+.dark .cad-scene-category[data-category="helper"],
+.dark .cad-scene-category[data-category="restoration"] { color: #a7c0cb; }
+.dark .cad-scene-category[data-category="antagonist"] { color: #e1b669; }
+.cad-mesh-child {
+  position: relative;
+  border-left: 1px solid color-mix(in srgb, var(--accent-blue) 50%, transparent);
+  margin-left: 19px;
+  padding-left: 10px;
+}
+
+.cad-right-panel-header { gap: 6px; padding-block: 4px; }
+.cad-right-panel-header button[aria-pressed] {
+  min-height: 32px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  padding-inline: 10px;
+  font-size: 10px;
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease;
+}
+.cad-right-panel-header button[aria-pressed="true"] {
+  color: var(--accent-foreground);
+  border-color: var(--accent-strong);
+  background: var(--accent-strong);
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--accent-strong) 24%, transparent);
+}
+.cad-right-panel-header button[aria-pressed="false"]:hover {
+  color: var(--foreground);
+  background: var(--surface-blue);
+}
+.cad-workspace[data-cad-mode="practice"] .cad-right-panel {
+  border-top: 2px solid var(--accent-strong);
+}
+.cad-workspace[data-cad-mode="free-lab"] .cad-right-panel {
+  border-top: 2px solid var(--accent-blue);
+}
+
+.cad-properties-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  background: color-mix(in srgb, var(--surface) 72%, var(--surface-blue));
+}
+.cad-properties-panel > div:first-child {
+  margin: 0;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-blue);
+  background: var(--surface-raised);
+  padding: 11px 12px;
+}
+.cad-properties-panel > section,
+.cad-properties-panel > details {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-raised);
+  padding: 11px;
+}
+.cad-properties-panel > div:not(:first-child):not(.h-px) {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-raised);
+  padding: 11px;
+}
+.cad-properties-panel > p {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-raised);
+  padding: 10px;
+}
+.cad-properties-panel > section:first-of-type { padding-block: 10px; }
+.cad-properties-panel label { color: var(--muted); }
+.cad-properties-panel input[type="number"],
+.cad-properties-panel select {
+  min-height: 30px;
+  background: var(--surface);
+  font-variant-numeric: tabular-nums;
+}
+.cad-properties-empty { color: var(--muted); }
+
+.cad-workspace nav.cad-tool-category-bar {
+  min-height: 58px;
+  gap: 12px;
+  padding: 8px 12px;
+  border-top: 1px solid color-mix(in srgb, var(--accent-blue) 32%, var(--border));
+  background: linear-gradient(180deg, var(--surface-raised), var(--surface));
+  box-shadow: 0 -5px 18px rgb(0 0 0 / 9%);
+}
+.cad-tool-category-bar > button[aria-pressed] {
+  min-height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding-inline: 12px;
+  font-size: 10px;
+  font-weight: 650;
+  background: var(--surface);
+}
+.cad-tool-category-bar > button[aria-pressed="true"] {
+  color: var(--accent-foreground);
+  border-color: var(--accent-strong);
+  background: var(--accent-strong);
+  box-shadow: 0 3px 10px color-mix(in srgb, var(--accent-strong) 25%, transparent);
+}
+.cad-tool-category-bar > button[aria-pressed="true"] svg { color: currentColor; }
+.cad-tool-category-bar > button[aria-pressed="false"]:hover {
+  color: var(--foreground);
+  border-color: color-mix(in srgb, var(--accent-blue) 50%, var(--border));
+  background: var(--surface-blue);
+}
+.cad-tool-category-bar > span[role="status"] {
+  min-height: 34px;
+  border: 1px solid color-mix(in srgb, var(--accent-strong) 40%, var(--border));
+  border-radius: 8px;
+  padding: 7px 11px;
+  background: color-mix(in srgb, var(--accent-strong) 8%, var(--surface));
+  color: var(--muted);
+}
+.cad-tool-category-bar > span[role="status"] strong { color: var(--foreground); }
+.cad-tool-shelf,
+.cad-analysis-controls,
+.cad-workspace > div[aria-label][class*="bg-card/60"] {
+  min-height: 50px;
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface-raised) 88%, var(--surface-blue));
+}
+.cad-tool-shelf button[aria-pressed="true"],
+.cad-analysis-controls button[aria-pressed="true"],
+.cad-workspace > footer button[aria-pressed="true"] {
+  color: var(--accent-foreground);
+  border-color: var(--accent-strong);
+  background: var(--accent-strong);
+}
+.cad-tool-shelf button,
+.cad-analysis-controls button,
+.cad-workspace > footer button {
+  min-height: 32px;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+.cad-tool-shelf button:hover:not(:disabled):not([aria-pressed="true"]),
+.cad-analysis-controls button:hover:not(:disabled):not([aria-pressed="true"]),
+.cad-workspace > footer button:hover:not(:disabled):not([aria-pressed="true"]) { background-color: var(--surface-blue); }
+.cad-tool-shelf button:disabled,
+.cad-analysis-controls button:disabled,
+.cad-workspace > footer button:disabled { opacity: .45; }
+.cad-workspace > footer {
+  min-height: 40px;
+  background: var(--surface-raised);
+}
+.cad-workspace > footer [role="status"] { font-variant-numeric: tabular-nums; }
+
+.cad-workspace[data-cad-mode="practice"] > nav:has(ol) {
+  border-bottom-color: color-mix(in srgb, var(--accent-strong) 36%, var(--border));
+  background: color-mix(in srgb, var(--accent-strong) 5%, var(--surface-raised));
+}
+.cad-workspace[data-cad-mode="practice"] nav.cad-tool-category-bar {
+  border-top: 2px solid var(--accent-strong);
+}
+.cad-workspace[data-cad-mode="free-lab"] nav.cad-tool-category-bar {
+  border-top: 2px solid var(--accent-blue);
+}
+.cad-workspace > nav:has(ol) li[aria-current="step"] {
+  background: color-mix(in srgb, var(--accent-strong) 18%, var(--surface));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent-strong) 50%, transparent);
+}
+.cad-workspace > nav:has(ol) li > span:first-child[class*="bg-emerald-600"] {
+  box-shadow: 0 0 0 3px color-mix(in srgb, #15945a 16%, transparent);
+}
+
+.cad-right-panel > div > section:has(#practice-actions-title) {
+  color: var(--foreground);
+  background: var(--surface);
+}
+.cad-right-panel > div > section:has(#practice-actions-title) > div:first-child {
+  padding: 14px 13px 12px;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-strong) 26%, var(--border));
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent-strong) 10%, var(--surface)), var(--surface-raised) 68%);
+}
+.cad-workspace[data-cad-mode="practice"] .cad-right-panel > div > section:has(#practice-actions-title) > div:first-child h2 {
+  font-size: 16px;
+  line-height: 1.35;
+}
+.cad-right-panel > div > section:has(#practice-actions-title) > div:nth-child(2) {
+  padding: 12px;
+  background: color-mix(in srgb, var(--surface) 72%, var(--surface-blue));
+}
+.cad-right-panel #practice-actions-title {
+  margin-bottom: 8px;
+  color: var(--foreground);
+  font-size: 10px;
+}
+.cad-right-panel #practice-actions-title + ol > li {
+  min-height: 54px;
+  border-color: var(--border);
+  border-radius: 8px;
+  background: var(--surface-raised);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 3%);
+}
+.cad-right-panel #practice-actions-title + ol > li:first-child {
+  border-left: 2px solid var(--accent-strong);
+}
+.cad-right-panel #practice-actions-title + ol > li > span:first-child {
+  width: 23px;
+  height: 23px;
+  border: 1px solid color-mix(in srgb, var(--accent-strong) 30%, var(--border));
+  color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-strong) 10%, var(--surface));
+}
+.cad-right-panel #practice-actions-title + ol button {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+.cad-right-panel #practice-actions-title + ol button:hover {
+  background: color-mix(in srgb, var(--accent-blue) 13%, var(--surface));
+}
+.cad-right-panel section:has(#practice-actions-title) details {
+  border: 1px solid color-mix(in srgb, var(--accent-blue) 30%, var(--border));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent-blue) 7%, var(--surface));
+  padding: 10px;
+}
+.cad-right-panel section:has(#practice-actions-title) > div:nth-child(2) > section:not([aria-labelledby]) {
+  border: 1px solid color-mix(in srgb, var(--accent-blue) 28%, var(--border));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent-blue) 6%, var(--surface));
+  padding: 10px;
+}
+.cad-right-panel section:has(#practice-actions-title) [role="status"][aria-live="polite"] {
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface-raised);
+  padding: 11px;
+}
+.cad-right-panel section:has(#practice-actions-title) [role="status"][aria-live="polite"]:has(.text-emerald-600):not(:has(.text-destructive)):not(:has(.text-amber-700)) {
+  border-color: color-mix(in srgb, #16965c 42%, var(--border));
+  background: color-mix(in srgb, #16965c 9%, var(--surface));
+  box-shadow: inset 3px 0 #16965c;
+}
+.cad-right-panel section:has(#practice-actions-title) [role="status"][aria-live="polite"]:has(.text-destructive) {
+  border-color: color-mix(in srgb, var(--danger) 42%, var(--border));
+  background: color-mix(in srgb, var(--danger) 9%, var(--surface));
+  box-shadow: inset 3px 0 var(--danger);
+}
+.cad-right-panel section:has(#practice-actions-title) [role="status"][aria-live="polite"]:has(.text-amber-700) {
+  border-color: color-mix(in srgb, #b98434 42%, var(--border));
+  background: color-mix(in srgb, #b98434 9%, var(--surface));
+  box-shadow: inset 3px 0 #b98434;
+}
+.cad-right-panel section:has(#practice-actions-title) [role="status"][aria-live="polite"] > p:last-child {
+  margin-top: 8px;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+  color: var(--foreground);
+  font-size: 13px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+.cad-right-panel section:has(#practice-actions-title) [role="status"][aria-live="polite"]:has(.text-emerald-600):not(:has(.text-destructive)):not(:has(.text-amber-700)) > p:last-child {
+  border-top-color: color-mix(in srgb, #16965c 30%, var(--border));
+  color: #16804f;
+}
+.dark .cad-right-panel section:has(#practice-actions-title) [role="status"][aria-live="polite"]:has(.text-emerald-600):not(:has(.text-destructive)):not(:has(.text-amber-700)) > p:last-child { color: #71d5a2; }
+.cad-right-panel section:has(#practice-actions-title) [role="status"][aria-live="polite"]:has(.text-destructive) > p:last-child { border-top-color: color-mix(in srgb, var(--danger) 26%, var(--border)); color: var(--danger); }
+.cad-right-panel section:has(#practice-actions-title) [role="status"][aria-live="polite"]:has(.text-amber-700) > p:last-child { border-top-color: color-mix(in srgb, #b98434 30%, var(--border)); color: #a7792f; }
+.dark .cad-right-panel section:has(#practice-actions-title) [role="status"][aria-live="polite"]:has(.text-amber-700) > p:last-child { color: #e1b669; }
+.cad-right-panel section:has(#practice-actions-title) > div:last-child:not(:nth-child(2)) {
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  background: var(--surface-raised);
+}
+.cad-right-panel section:has(#practice-actions-title) > div:last-child > button {
+  min-height: 42px;
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--accent-strong) 20%, transparent);
+}
+.cad-right-panel section:has(#practice-actions-title) [class*="border-emerald-600/25"] {
+  border-color: color-mix(in srgb, #16965c 40%, var(--border));
+  background: color-mix(in srgb, #16965c 9%, var(--surface));
+  box-shadow: inset 3px 0 #16965c;
+}
+
+/* Compact Practice guide and secondary inspector navigation */
+.cad-workspace[data-cad-mode="practice"] .cad-right-panel:not(.w-10) { width: min(344px, 28vw); }
+.cad-workspace[data-cad-mode="practice"] .cad-right-panel[data-panel-mode="properties"] { border-top-color: var(--accent-blue); }
+.cad-right-mode-control {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.cad-right-mode-label {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--foreground);
+  font-size: 11px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cad-guide-mode-title {
+  color: var(--accent-strong);
+  font-size: 12px;
+}
+.cad-right-mode-properties,
+.cad-right-mode-back {
+  display: inline-flex;
+  min-height: 32px;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 0 9px;
+  color: var(--muted);
+  background: var(--surface);
+  font-size: 10px;
+  font-weight: 600;
+  transition: background-color .15s ease, color .15s ease, border-color .15s ease;
+}
+.cad-right-mode-properties:hover,
+.cad-right-mode-back:hover {
+  color: var(--foreground);
+  border-color: color-mix(in srgb, var(--accent-blue) 50%, var(--border));
+  background: var(--surface-blue);
+}
+.cad-right-mode-back { color: var(--accent-strong); }
+
+.cad-practice-guide {
+  min-width: 0;
+  background: var(--surface);
+}
+.cad-guide-task-header {
+  padding: 14px 14px 12px;
+  background: linear-gradient(150deg, color-mix(in srgb, var(--accent-strong) 8%, var(--surface)), var(--surface-raised) 72%);
+}
+.cad-guide-task-header h2 { font-size: 16px; line-height: 1.3; }
+.cad-guide-task-header > p:last-child { max-width: 34ch; }
+.cad-guide-scroll-region {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 11px 12px;
+  overscroll-behavior: contain;
+}
+.cad-guide-progress {
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface-raised);
+  padding: 10px;
+}
+.cad-guide-progress h3 { color: var(--foreground); }
+.cad-guide-secondary-action {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0 8px;
+  color: var(--accent-blue);
+  background: var(--surface);
+  font-size: 10px;
+  font-weight: 600;
+}
+.cad-guide-secondary-action:hover { background: var(--surface-blue); }
+.cad-guide-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cad-guide-check-row {
+  display: flex;
+  min-height: 40px;
+  min-width: 0;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid transparent;
+  border-left-width: 2px;
+  border-radius: 6px;
+  padding: 4px 6px;
+  color: var(--muted);
+  background: transparent;
+}
+.cad-guide-check-row[data-check-state="current"] {
+  color: var(--foreground);
+  border-color: color-mix(in srgb, var(--accent-strong) 30%, var(--border));
+  border-left-color: var(--accent-strong);
+  background: color-mix(in srgb, var(--accent-strong) 8%, var(--surface));
+}
+.cad-guide-check-row[data-check-state="complete"] {
+  color: var(--foreground);
+  border-color: color-mix(in srgb, #16965c 22%, transparent);
+  background: color-mix(in srgb, #16965c 6%, var(--surface));
+}
+.cad-guide-check-marker {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  flex: none;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--muted);
+  background: var(--surface);
+  font-size: 10px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.cad-guide-check-row[data-check-state="current"] .cad-guide-check-marker {
+  color: var(--accent-foreground);
+  border-color: var(--accent-strong);
+  background: var(--accent-strong);
+}
+.cad-guide-check-row[data-check-state="complete"] .cad-guide-check-marker {
+  color: #fff;
+  border-color: #16804f;
+  background: #16804f;
+}
+.cad-guide-target-action {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--accent-blue);
+  background: transparent;
+}
+.cad-guide-target-action:hover {
+  border-color: color-mix(in srgb, var(--accent-blue) 30%, var(--border));
+  background: color-mix(in srgb, var(--accent-blue) 11%, var(--surface));
+}
+.cad-guide-live-state {
+  display: grid;
+  gap: 7px;
+  border: 1px solid color-mix(in srgb, var(--accent-strong) 26%, var(--border));
+  border-radius: 9px;
+  background: color-mix(in srgb, var(--accent-strong) 5%, var(--surface-raised));
+  padding: 9px 10px;
+}
+.cad-guide-live-target + .cad-guide-live-target { border-top: 1px solid var(--border); padding-top: 7px; }
+.cad-guide-live-object {
+  display: block;
+  margin-bottom: 5px;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cad-guide-live-label {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.cad-guide-live-target strong { color: var(--foreground); font-size: 11px; font-variant-numeric: tabular-nums; }
+.cad-guide-live-target [data-testid="guide-curve-state"] { color: var(--accent-strong); }
+
+.cad-guide-help {
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface-raised);
+}
+.cad-guide-help > summary,
+.cad-guide-help-content > details > summary {
+  display: flex;
+  min-height: 38px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  cursor: pointer;
+  list-style: none;
+  padding: 0 10px;
+  color: var(--foreground);
+  font-size: 11px;
+  font-weight: 650;
+}
+.cad-guide-help > summary::-webkit-details-marker,
+.cad-guide-help-content > details > summary::-webkit-details-marker { display: none; }
+.cad-guide-help > summary::after,
+.cad-guide-help-content > details > summary::after { content: "+"; color: var(--accent-blue); font-size: 16px; line-height: 1; }
+.cad-guide-help[open] > summary::after,
+.cad-guide-help-content > details[open] > summary::after { content: "−"; }
+.cad-guide-help-content {
+  display: grid;
+  gap: 2px;
+  border-top: 1px solid var(--border);
+  padding: 4px 9px 9px;
+}
+.cad-guide-help-content > details { border-bottom: 1px solid color-mix(in srgb, var(--border) 72%, transparent); }
+.cad-guide-help-content > details:last-child { border-bottom: 0; }
+.cad-guide-help-content > details > summary { min-height: 34px; padding-inline: 2px; color: var(--muted); font-size: 10px; }
+.cad-guide-hint {
+  margin-top: 3px;
+  border-left: 2px solid var(--accent-blue);
+  border-radius: 4px;
+  background: var(--surface-blue);
+  padding: 8px;
+}
+.cad-guide-reference-select select {
+  min-height: 31px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  padding-inline: 8px;
+  color: var(--foreground);
+}
+
+.cad-guide-result {
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface-raised);
+  padding: 11px;
+}
+.cad-guide-result[data-result-state="success"] {
+  border-color: color-mix(in srgb, #16804f 48%, var(--border));
+  background: color-mix(in srgb, #16804f 9%, var(--surface));
+  box-shadow: inset 3px 0 #16804f;
+}
+.cad-guide-result[data-result-state="warning"] {
+  border-color: color-mix(in srgb, #b98434 46%, var(--border));
+  background: color-mix(in srgb, #b98434 9%, var(--surface));
+  box-shadow: inset 3px 0 #b98434;
+}
+.cad-guide-result[data-result-state="error"] {
+  border-color: color-mix(in srgb, var(--danger) 48%, var(--border));
+  background: color-mix(in srgb, var(--danger) 9%, var(--surface));
+  box-shadow: inset 3px 0 var(--danger);
+}
+.cad-guide-result-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.cad-guide-result[data-result-state="success"] .cad-guide-result-heading > svg,
+.cad-guide-result[data-result-state="success"] .cad-guide-result-eyebrow { color: #16804f; }
+.dark .cad-guide-result[data-result-state="success"] .cad-guide-result-heading > svg,
+.dark .cad-guide-result[data-result-state="success"] .cad-guide-result-eyebrow { color: #71d5a2; }
+.cad-guide-result[data-result-state="warning"] .cad-guide-result-eyebrow,
+.cad-guide-result[data-result-state="warning"] .cad-guide-result-symbol { color: #a7792f; }
+.dark .cad-guide-result[data-result-state="warning"] .cad-guide-result-eyebrow,
+.dark .cad-guide-result[data-result-state="warning"] .cad-guide-result-symbol { color: #e1b669; }
+.cad-guide-result[data-result-state="error"] .cad-guide-result-eyebrow,
+.cad-guide-result[data-result-state="error"] .cad-guide-result-symbol { color: var(--danger); }
+.cad-guide-result-eyebrow { color: var(--muted); font-size: 9px; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
+.cad-guide-result-symbol { display: grid; width: 21px; height: 21px; flex: none; place-items: center; border: 1px solid currentColor; border-radius: 50%; font-size: 12px; font-weight: 800; }
+.cad-guide-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 9px;
+  border-top: 1px solid color-mix(in srgb, var(--border) 72%, transparent);
+  padding-top: 8px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.cad-guide-score strong { color: var(--foreground); font-size: 18px; font-variant-numeric: tabular-nums; }
+.cad-guide-score small { font-size: 10px; font-weight: 600; }
+.cad-guide-result[data-result-state="success"] .cad-guide-score strong { color: #16804f; }
+.dark .cad-guide-result[data-result-state="success"] .cad-guide-score strong { color: #71d5a2; }
+.cad-guide-result[data-result-state="error"] .cad-guide-score strong { color: var(--danger); }
+.cad-guide-result[data-result-state="warning"] .cad-guide-score strong { color: #a7792f; }
+.dark .cad-guide-result[data-result-state="warning"] .cad-guide-score strong { color: #e1b669; }
+.cad-guide-result-details { margin-top: 8px; border-top: 1px solid var(--border); padding-top: 6px; }
+.cad-guide-result-details summary { cursor: pointer; color: var(--muted); font-size: 10px; }
+.cad-guide-result-details p { margin-top: 6px; font-size: 10px; line-height: 1.4; }
+.cad-guide-save-note { color: var(--muted); font-size: 10px; }
+.cad-guide-exercise-complete {
+  border: 1px solid color-mix(in srgb, #16804f 48%, var(--border));
+  border-radius: 9px;
+  background: color-mix(in srgb, #16804f 8%, var(--surface));
+  box-shadow: inset 3px 0 #16804f;
+  padding: 11px;
+}
+.cad-guide-check-footer {
+  z-index: 3;
+  border-top: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface-raised) 94%, var(--surface-blue));
+  padding: 9px 12px 11px;
+  box-shadow: 0 -6px 18px rgb(0 0 0 / 12%);
+}
+.cad-guide-overall-progress {
+  height: 3px;
+  overflow: hidden;
+  margin: 6px 0 9px;
+  border-radius: 999px;
+  background: var(--border);
+}
+.cad-guide-overall-progress > span { display: block; height: 100%; border-radius: inherit; background: var(--accent-strong); transition: width .2s ease; }
+.cad-guide-check-footer > button { min-height: 42px; }

@@ -1,0 +1,1487 @@
+{
+  "schemaVersion": 1,
+  "scope": "PRIVATE EDUCATIONAL V1 ONLY",
+  "generatedAt": "2026-10-02T12:53:02.430Z",
+  "sourceManifest": "src/cad/case-packages/private-v1/asset-manifest.json",
+  "sourceUnitStatus": "unknown",
+  "patientAndSourceImageProvenanceStatus": "unknown",
+  "expertReviewStatus": "not_reviewed",
+  "publicProductionApproval": false,
+  "syntheticDentalTrainingAssets": true,
+  "assets": [
+    {
+      "id": "d5000000-0000-5000-9000-000000000001",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Maxillary central incisor",
+      "uid": "c8a7c2d9280d4c92bc651cfa1459866a",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-left-central-incisor-c8a7c2d9280d4c92bc651cfa1459866a",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Left Central Incisor by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-left-central-incisor-c8a7c2d9280d4c92bc651cfa1459866a. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "0b2a312698292424025878cbc4fbb4dbedafd5bc1cbc376b1355759c9fcca7d4",
+      "sourceObjChecksum": "737b9714c459a00e74711d45b59ace3d4884265d5e0fd0f861dcbfa23bc2c59c",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/c8a7c2d9280d4c92bc651cfa1459866a/mesh-original/UL1sketch1_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          -0.2840574,
+          3.16718745,
+          7.41190624
+        ],
+        "max": [
+          0.43131262,
+          5.1225996,
+          8.22623157
+        ],
+        "spans": [
+          0.7153700199999999,
+          1.95541215,
+          0.8143253299999991
+        ]
+      },
+      "proposedFdi": 21,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        10.739423911219944,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.739423911219944,
+        0,
+        0,
+        -10.739423911219944,
+        0,
+        0,
+        -0.7907181153599765,
+        83.97229556183335,
+        -46.19376863184572,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000006",
+      "runtimeFile": "r4-denture-tooth-upper-central.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000001",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.990946054458618,
+          -2.4029510021209717,
+          -0.3499999940395355
+        ],
+        "max": [
+          2.567357301712036,
+          4.372692584991455,
+          8.819999694824219
+        ],
+        "spans": [
+          5.558303356170654,
+          6.775643587112427,
+          9.169999688863754
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 8559,
+      "runtimeTriangleCount": 17114,
+      "runtimeByteSize": 412728,
+      "runtimeChecksum": "4d64d0be2d113213c34e51af6183db145db039dd507d4eb4dde989a1f858a213",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000006",
+      "r4ToothLibraryKey": "upper-central",
+      "r4TrainingLabel": "Maxillary central incisor"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000002",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Maxillary lateral incisor",
+      "uid": "5e89ddbfc6454e2e8e09c645574b8932",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-lateral-incisor-5e89ddbfc6454e2e8e09c645574b8932",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Lateral Incisor by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-lateral-incisor-5e89ddbfc6454e2e8e09c645574b8932. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "f7f58dd904c5415489fd02f085d400dee376b2fe3acddcb7189a80ad96c8d670",
+      "sourceObjChecksum": "d4202f65047acca2f298d6147caee4429665c56f27cdf778adabf73c911edfcc",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/5e89ddbfc6454e2e8e09c645574b8932/mesh-original/UL2sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          0.45420956,
+          3.18702411,
+          7.41077041
+        ],
+        "max": [
+          1.05011451,
+          4.88458633,
+          8.08207321
+        ],
+        "spans": [
+          0.59590495,
+          1.6975622200000005,
+          0.6713028000000012
+        ]
+      },
+      "proposedFdi": 22,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        11.487060544973717,
+        0,
+        0,
+        0,
+        0,
+        0,
+        11.487060544973717,
+        0,
+        0,
+        -11.487060544973717,
+        0,
+        0,
+        -8.64013083567564,
+        88.98361633837489,
+        -47.91953890986097,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000007",
+      "runtimeFile": "r4-denture-tooth-upper-lateral.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000002",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.957545518875122,
+          -2.077396869659424,
+          -0.3499999940395355
+        ],
+        "max": [
+          1.5669687986373901,
+          3.8556480407714844,
+          8.1899995803833
+        ],
+        "spans": [
+          4.524514317512512,
+          5.933044910430908,
+          8.539999574422836
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 9341,
+      "runtimeTriangleCount": 18678,
+      "runtimeByteSize": 450264,
+      "runtimeChecksum": "09a48a0cdaf9a3fb2d0ae7dfc0baf0cbb68a5d98b005483f9386f91fcbb2d868",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000007",
+      "r4ToothLibraryKey": "upper-lateral",
+      "r4TrainingLabel": "Maxillary lateral incisor"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000003",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Maxillary canine · left",
+      "uid": "bd930c9b9da14f2a9a8c9b130b0e08a2",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-canine-bd930c9b9da14f2a9a8c9b130b0e08a2",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Canine by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-canine-bd930c9b9da14f2a9a8c9b130b0e08a2. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "cbed0e9c8053b7582ab54accef31b73fa51ea281e55d186b80636012aadd0c16",
+      "sourceObjChecksum": "f49985655cf4cdaaecac5d60c63a50172a5b8d6db74a68e09947adcb73df8cda",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/bd930c9b9da14f2a9a8c9b130b0e08a2/mesh-original/UL3sketch1_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          0.95622646,
+          3.18430113,
+          7.05460262
+        ],
+        "max": [
+          1.57301628,
+          5.16694545,
+          7.79042863
+        ],
+        "spans": [
+          0.61678982,
+          1.98264432,
+          0.7358260100000003
+        ]
+      },
+      "proposedFdi": 23,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        12.609422551393385,
+        0,
+        0,
+        0,
+        0,
+        0,
+        12.609422551393385,
+        0,
+        0,
+        -12.609422551393385,
+        0,
+        0,
+        -15.946145221851998,
+        93.59363590994477,
+        -54.65219847904944,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000012",
+      "runtimeFile": "r4-denture-tooth-upper-canine-left.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000003",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.8318557739257812,
+          -3.021540880203247,
+          -0.3499999940395355
+        ],
+        "max": [
+          3.5433666706085205,
+          4.6391706466674805,
+          10.5
+        ],
+        "spans": [
+          6.375222444534302,
+          7.6607115268707275,
+          10.849999994039536
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 20973,
+      "runtimeTriangleCount": 41942,
+      "runtimeByteSize": 1008588,
+      "runtimeChecksum": "ac83c93c24cb70a161a429ed10a8413e4a6885716b1e8dc8fd858ea6b8ea3ff6",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000012",
+      "r4ToothLibraryKey": "upper-canine-left",
+      "r4TrainingLabel": "Maxillary canine · left"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000004",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Maxillary canine · mirrored right",
+      "uid": "bd930c9b9da14f2a9a8c9b130b0e08a2",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-canine-bd930c9b9da14f2a9a8c9b130b0e08a2",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Canine by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-canine-bd930c9b9da14f2a9a8c9b130b0e08a2. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "cbed0e9c8053b7582ab54accef31b73fa51ea281e55d186b80636012aadd0c16",
+      "sourceObjChecksum": "f49985655cf4cdaaecac5d60c63a50172a5b8d6db74a68e09947adcb73df8cda",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/bd930c9b9da14f2a9a8c9b130b0e08a2/mesh-original/UL3sketch1_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          0.95622646,
+          3.18430113,
+          7.05460262
+        ],
+        "max": [
+          1.57301628,
+          5.16694545,
+          7.79042863
+        ],
+        "spans": [
+          0.61678982,
+          1.98264432,
+          0.7358260100000003
+        ]
+      },
+      "proposedFdi": 13,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Controlled OFFLINE sagittal mirror of the source FDI 23 training mesh to FDI 13. Triangle winding was reversed after reflection; runtime vertex normals were recomputed; closed-manifold topology was checked. Exact symmetry is an educational derivation, not a natural contralateral specimen. Source units and patient/source-image provenance remain unknown; not expert reviewed. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        12.609422551393385,
+        0,
+        0,
+        0,
+        0,
+        0,
+        12.609422551393385,
+        0,
+        0,
+        -12.609422551393385,
+        0,
+        0,
+        -15.946145221851998,
+        93.59363590994477,
+        -54.65219847904944,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000001000",
+      "runtimeFile": "r4-denture-tooth-upper-canine-right.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000004",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.5433666706085205,
+          -3.021540880203247,
+          -0.3499999940395355
+        ],
+        "max": [
+          2.8318557739257812,
+          4.6391706466674805,
+          10.5
+        ],
+        "spans": [
+          6.375222444534302,
+          7.6607115268707275,
+          10.849999994039536
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 20973,
+      "runtimeTriangleCount": 41942,
+      "mirrorOfFdi": 23,
+      "offlineMirrorTopology": {
+        "triangleCount": 95968,
+        "degenerateTriangles": 0,
+        "openBoundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "sameDirectionTwoFaceEdges": 0,
+        "signedMeshVolume": 693.8706748461047
+      },
+      "runtimeByteSize": 1008628,
+      "runtimeChecksum": "ebe55fd80f89585a91af06f8d66e14b983e08b428b392740d27034d0498540c0",
+      "r4DerivationNotes": "Controlled OFFLINE sagittal mirror of the source FDI 23 training mesh to FDI 13. Triangle winding was reversed after reflection; runtime vertex normals were recomputed; closed-manifold topology was checked. Exact symmetry is an educational derivation, not a natural contralateral specimen. Source units and patient/source-image provenance remain unknown; not expert reviewed. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000001000",
+      "r4ToothLibraryKey": "upper-canine-right",
+      "r4TrainingLabel": "Maxillary canine · mirrored right"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000005",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Maxillary first premolar",
+      "uid": "f9b48a29d34f4923b683433f030c5c70",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-premolar-f9b48a29d34f4923b683433f030c5c70",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Premolar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-premolar-f9b48a29d34f4923b683433f030c5c70. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "b1368ef605a24a38321298a2596f0ebb8a74a6b3d7a834dc1c666cc71d9b5627",
+      "sourceObjChecksum": "14dee9609ee9fdf9f4307be2c23989810d7d7e72dec9ef9a798ec4cae8215de6",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/f9b48a29d34f4923b683433f030c5c70/mesh-original/UL4sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.14402604,
+          3.30226254,
+          6.57801818
+        ],
+        "max": [
+          1.9713068,
+          5.10662794,
+          7.23919343
+        ],
+        "spans": [
+          0.8272807600000001,
+          1.8043654,
+          0.6611752500000003
+        ]
+      },
+      "proposedFdi": 24,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.144489248131226,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.144489248131226,
+        0,
+        0,
+        -9.144489248131226,
+        0,
+        0,
+        -14.244063829865057,
+        63.17567150339948,
+        -39.76750429153651,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000001",
+      "runtimeFile": "r4-denture-tooth-upper-first-premolar.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000005",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.443406105041504,
+          -1.7633142471313477,
+          -0.3499999940395355
+        ],
+        "max": [
+          3.301689386367798,
+          2.783843517303467,
+          6.929999828338623
+        ],
+        "spans": [
+          6.745095491409302,
+          4.5471577644348145,
+          7.279999822378159
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 11213,
+      "runtimeTriangleCount": 22422,
+      "runtimeByteSize": 540120,
+      "runtimeChecksum": "189fcccd0874992987f17d91c9c3cb7d0249bb47ceb9b0098660bb6570272fbb",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000001",
+      "r4ToothLibraryKey": "upper-first-premolar",
+      "r4TrainingLabel": "Maxillary first premolar"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000006",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Maxillary second premolar",
+      "uid": "69f3142830064588b000b04bea0ee09f",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-second-premolar-69f3142830064588b000b04bea0ee09f",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Second Premolar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-second-premolar-69f3142830064588b000b04bea0ee09f. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "6d40b7150651817ed114d5d89f0c4b68bc463ea50a530d634fb6612e2b5304ae",
+      "sourceObjChecksum": "0b3c5698d03df5c9b59f902d34dbe37de8e256860fa1dae9a915acfd1fcac56e",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/69f3142830064588b000b04bea0ee09f/mesh-original/UL5sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.50313782,
+          3.31756258,
+          5.98613548
+        ],
+        "max": [
+          2.28259372,
+          4.99918651,
+          6.63870906
+        ],
+        "spans": [
+          0.7794558999999999,
+          1.6816239300000002,
+          0.6525735800000003
+        ]
+      },
+      "proposedFdi": 25,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.514612461538887,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.514612461538887,
+        0,
+        0,
+        -9.514612461538887,
+        0,
+        0,
+        -18.009884243262402,
+        60.060251592637584,
+        -40.845322265603095,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000002",
+      "runtimeFile": "r4-denture-tooth-upper-second-premolar.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000006",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.379911422729492,
+          -1.5754362344741821,
+          -0.3499999940395355
+        ],
+        "max": [
+          3.7081103324890137,
+          3.097841262817383,
+          6.71999979019165
+        ],
+        "spans": [
+          6.088021755218506,
+          4.673277497291565,
+          7.069999784231186
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 10147,
+      "runtimeTriangleCount": 20290,
+      "runtimeByteSize": 488956,
+      "runtimeChecksum": "d710d3ad7e9e85f4d3d992bb5201ae695943b2a1763822796d91d343112311df",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000002",
+      "r4ToothLibraryKey": "upper-second-premolar",
+      "r4TrainingLabel": "Maxillary second premolar"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000007",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Maxillary first molar",
+      "uid": "e719a474ef7e4bd7abec508f85f1e984",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-first-molar-e719a474ef7e4bd7abec508f85f1e984. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "c09984927d729d9ec1a698614fdea32ebbb42c7c3d523f27f113d533e87692be",
+      "sourceObjChecksum": "c60d80897f30a31cbd7b3bdab9179c02f71c474b89ec35612910b494d1f48c94",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e719a474ef7e4bd7abec508f85f1e984/mesh-original/UL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.6476829,
+          3.30910158,
+          5.07781171
+        ],
+        "max": [
+          2.68708968,
+          5.09402227,
+          6.07118845
+        ],
+        "spans": [
+          1.0394067800000002,
+          1.7849206899999999,
+          0.9933767400000004
+        ]
+      },
+      "proposedFdi": 26,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.524232698540796,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.524232698540796,
+        0,
+        0,
+        -9.524232698540796,
+        0,
+        0,
+        -20.642691373587027,
+        53.092835939954284,
+        -41.376653471029016,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000003",
+      "runtimeFile": "r4-denture-tooth-upper-first-molar.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000007",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.1915202140808105,
+          -4.480465412139893,
+          -0.3499999940395355
+        ],
+        "max": [
+          4.9497761726379395,
+          3.605502128601074,
+          7.139999866485596
+        ],
+        "spans": [
+          9.14129638671875,
+          8.085967540740967,
+          7.489999860525131
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 12658,
+      "runtimeTriangleCount": 25312,
+      "runtimeByteSize": 609468,
+      "runtimeChecksum": "41776c913b06eadcc1843386242875ee6860bd03c4a7e252069de7f855c381da",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000003",
+      "r4ToothLibraryKey": "upper-first-molar",
+      "r4TrainingLabel": "Maxillary first molar"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000008",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Maxillary second molar",
+      "uid": "e035713849d1438791306e25235ac452",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-second-molar-e035713849d1438791306e25235ac452",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Second Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-second-molar-e035713849d1438791306e25235ac452. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "222abf192160adbef2bec67dc6572227124454ff4d194327708457e66a56ea2e",
+      "sourceObjChecksum": "ad24ab4b09bc7835882ad2cc52de575ed2878d2939115b9984c7eaa841f107e6",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e035713849d1438791306e25235ac452/mesh-original/UL7sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.94135534,
+          3.47185993,
+          3.8512454
+        ],
+        "max": [
+          2.87165617,
+          5.05385685,
+          4.70807409
+        ],
+        "spans": [
+          0.93030083,
+          1.58199692,
+          0.8568286900000004
+        ]
+      },
+      "proposedFdi": 27,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        10.429855956988842,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.429855956988842,
+        0,
+        0,
+        -10.429855956988842,
+        0,
+        0,
+        -25.09950838431468,
+        44.6362346852736,
+        -45.78099897274136,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000004",
+      "runtimeFile": "r4-denture-tooth-upper-second-molar.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000008",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.751481533050537,
+          -3.768918991088867,
+          -0.3499999940395355
+        ],
+        "max": [
+          4.2743330001831055,
+          3.769702196121216,
+          6.929999828338623
+        ],
+        "spans": [
+          9.025814533233643,
+          7.538621187210083,
+          7.279999822378159
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 13481,
+      "runtimeTriangleCount": 26958,
+      "runtimeByteSize": 648976,
+      "runtimeChecksum": "3d81655643b73ac8a161d4e9bf717bd3827e4c6b9e81110ae400fd40f135323b",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000004",
+      "r4ToothLibraryKey": "upper-second-molar",
+      "r4TrainingLabel": "Maxillary second molar"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000009",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Mandibular central incisor",
+      "uid": "90dcbf474e5a4d97b8783b7eb2b9c4b7",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-left-central-incisor-90dcbf474e5a4d97b8783b7eb2b9c4b7",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular Left Central Incisor by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-left-central-incisor-90dcbf474e5a4d97b8783b7eb2b9c4b7. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "8400194d6ffecf8cc93f64ade66bb32a604785a79bd5cebf37919ba1c6eaa16f",
+      "sourceObjChecksum": "0270d65240fee4e50c9674aaffeb931f6c70d13677d7e42cb8acb1639e0edccb",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/90dcbf474e5a4d97b8783b7eb2b9c4b7/mesh-original/LL2sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          0.24760226,
+          1.53209686,
+          6.80007028
+        ],
+        "max": [
+          0.75501567,
+          3.41291928,
+          7.61062336
+        ],
+        "spans": [
+          0.5074134100000001,
+          1.88082242,
+          0.81055308
+        ]
+      },
+      "proposedFdi": 31,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        10.367804952048582,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.367804952048582,
+        0,
+        0,
+        -10.367804952048582,
+        0,
+        0,
+        -5.197473569833349,
+        74.7036304416235,
+        -27.389481412126084,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000010",
+      "runtimeFile": "r4-denture-tooth-lower-central.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000009",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.6303815841674805,
+          -4.2018280029296875,
+          -0.3499999940395355
+        ],
+        "max": [
+          2.6303815841674805,
+          3.1589066982269287,
+          7.994999885559082
+        ],
+        "spans": [
+          5.260763168334961,
+          7.360734701156616,
+          8.344999879598618
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 11015,
+      "runtimeTriangleCount": 22026,
+      "runtimeByteSize": 530624,
+      "runtimeChecksum": "9f88c5962d53fcf1dfc3456a32127ad9f641a67dbea7a31ffd41cea32397fa23",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000010",
+      "r4ToothLibraryKey": "lower-central",
+      "r4TrainingLabel": "Mandibular central incisor"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000010",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Mandibular lateral incisor",
+      "uid": "00fa4f74e10b4769830bf60469c65e27",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-left-lateral-incisor-00fa4f74e10b4769830bf60469c65e27",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular Left Lateral Incisor by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-left-lateral-incisor-00fa4f74e10b4769830bf60469c65e27. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "de41d3da7b6c1b960dc6305dac2c8452d88d74c1d5f7adef43e6cf192163d8fc",
+      "sourceObjChecksum": "6dcbc29b1d89c68a795df2ce4863c5cb775a6b5621b58e3d44ff9032b1b8769e",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/00fa4f74e10b4769830bf60469c65e27/mesh-original/LL1sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          -0.33008632,
+          1.4741137,
+          6.81154537
+        ],
+        "max": [
+          0.21693383,
+          3.48402476,
+          7.70842123
+        ],
+        "spans": [
+          0.54702015,
+          2.0099110600000003,
+          0.8968758599999997
+        ]
+      },
+      "proposedFdi": 32,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.204387382195906,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.204387382195906,
+        0,
+        0,
+        -9.204387382195906,
+        0,
+        0,
+        0.5207496756100242,
+        66.82369868147299,
+        -24.48331354020212,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000011",
+      "runtimeFile": "r4-denture-tooth-lower-lateral.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000010",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.5174927711486816,
+          -4.127596378326416,
+          -0.3499999940395355
+        ],
+        "max": [
+          2.5174927711486816,
+          2.678800106048584,
+          7.585000038146973
+        ],
+        "spans": [
+          5.034985542297363,
+          6.806396484375,
+          7.935000032186508
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 11157,
+      "runtimeTriangleCount": 22310,
+      "runtimeByteSize": 537440,
+      "runtimeChecksum": "b08cf6308e7c2581feb3c6f1cbab757d020ce2096b4ce4526a0ad71f9981564a",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000011",
+      "r4ToothLibraryKey": "lower-lateral",
+      "r4TrainingLabel": "Mandibular lateral incisor"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000011",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Mandibular canine training approximation · maxillary source form",
+      "uid": "bd930c9b9da14f2a9a8c9b130b0e08a2",
+      "originalUrl": "https://sketchfab.com/3d-models/maxillary-canine-bd930c9b9da14f2a9a8c9b130b0e08a2",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Maxillary Canine by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/maxillary-canine-bd930c9b9da14f2a9a8c9b130b0e08a2. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "cbed0e9c8053b7582ab54accef31b73fa51ea281e55d186b80636012aadd0c16",
+      "sourceObjChecksum": "f49985655cf4cdaaecac5d60c63a50172a5b8d6db74a68e09947adcb73df8cda",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/bd930c9b9da14f2a9a8c9b130b0e08a2/mesh-original/UL3sketch1_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          0.95622646,
+          3.18430113,
+          7.05460262
+        ],
+        "max": [
+          1.57301628,
+          5.16694545,
+          7.79042863
+        ],
+        "spans": [
+          0.61678982,
+          1.98264432,
+          0.7358260100000003
+        ]
+      },
+      "proposedFdi": 23,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        12.609422551393385,
+        0,
+        0,
+        0,
+        0,
+        0,
+        12.609422551393385,
+        0,
+        0,
+        -12.609422551393385,
+        0,
+        0,
+        -15.946145221851998,
+        93.59363590994477,
+        -54.65219847904944,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000012",
+      "runtimeFile": "r4-denture-tooth-lower-canine-approximation.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000011",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.8318557739257812,
+          -3.021540880203247,
+          -0.3499999940395355
+        ],
+        "max": [
+          3.5433666706085205,
+          4.6391706466674805,
+          10.5
+        ],
+        "spans": [
+          6.375222444534302,
+          7.6607115268707275,
+          10.849999994039536
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 20973,
+      "runtimeTriangleCount": 41942,
+      "runtimeByteSize": 1008752,
+      "runtimeChecksum": "1333d24d5fb3c4294280d5a3934c431f6f6504c5026f13d5debf2920fe35a264",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000012",
+      "r4ToothLibraryKey": "lower-canine-approximation",
+      "r4TrainingLabel": "Mandibular canine training approximation · maxillary source form"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000012",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Mandibular first premolar",
+      "uid": "935637a703dc49eb9eeec9b15a8a5c4c",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-first-premolar-935637a703dc49eb9eeec9b15a8a5c4c",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular First Premolar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-first-premolar-935637a703dc49eb9eeec9b15a8a5c4c. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "38ead7788f8e17ff2064f2a066e750c490591e8421565d21808e5bec4bca5631",
+      "sourceObjChecksum": "c09137c36b4d66fa713f1c15e0f12b73508901e27065a03f84efd0fd4a659f32",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/935637a703dc49eb9eeec9b15a8a5c4c/mesh-original/L4sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.16776669,
+          1.32551026,
+          5.72966527
+        ],
+        "max": [
+          1.95288264,
+          3.35569715,
+          6.49602413
+        ],
+        "spans": [
+          0.7851159499999998,
+          2.0301868900000004,
+          0.7663588600000004
+        ]
+      },
+      "proposedFdi": 34,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        7.388482348046291,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7.388482348046291,
+        0,
+        0,
+        -7.388482348046291,
+        0,
+        0,
+        -11.528431244573742,
+        45.16464516229833,
+        -18.643509158164246,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000008",
+      "runtimeFile": "r4-denture-tooth-lower-first-premolar.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000012",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -2.900407552719116,
+          -2.8311145305633545,
+          -0.3499999940395355
+        ],
+        "max": [
+          2.900407552719116,
+          2.8311145305633545,
+          6.150000095367432
+        ],
+        "spans": [
+          5.800815105438232,
+          5.662229061126709,
+          6.500000089406967
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 11595,
+      "runtimeTriangleCount": 23186,
+      "runtimeByteSize": 558460,
+      "runtimeChecksum": "d0c7048f68f7189f08cde1740283c281c60dfeebd36aa2b611ae83d33c0bbbe4",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000008",
+      "r4ToothLibraryKey": "lower-first-premolar",
+      "r4TrainingLabel": "Mandibular first premolar"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000013",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Mandibular second premolar",
+      "uid": "fe59fe04725446479bc1115bb12d0ad8",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-left-second-premolar-fe59fe04725446479bc1115bb12d0ad8",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular Left Second Premolar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-left-second-premolar-fe59fe04725446479bc1115bb12d0ad8. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "0013021c486ae10be14eea20bfda2f9edd0fbc4cd28d00f022ee6bf0906bab1d",
+      "sourceObjChecksum": "7aff8c0ee0b4cccc7718e6cdf238555dffb7246f680737ca85fbbc516aca6b3f",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/fe59fe04725446479bc1115bb12d0ad8/mesh-original/LL5sketch1_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.28280234,
+          1.43673348,
+          5.34496784
+        ],
+        "max": [
+          2.03831076,
+          3.36343503,
+          6.02660656
+        ],
+        "spans": [
+          0.75550842,
+          1.9267015500000002,
+          0.6816387200000005
+        ]
+      },
+      "proposedFdi": 35,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        8.04483704287257,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8.04483704287257,
+        0,
+        0,
+        -8.04483704287257,
+        0,
+        0,
+        -13.358906845224677,
+        45.741231484450715,
+        -20.703286720639216,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000009",
+      "runtimeFile": "r4-denture-tooth-lower-second-premolar.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000013",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -3.038970947265625,
+          -2.7418363094329834,
+          -0.3499999940395355
+        ],
+        "max": [
+          3.038970947265625,
+          2.7418363094329834,
+          6.355000019073486
+        ],
+        "spans": [
+          6.07794189453125,
+          5.483672618865967,
+          6.705000013113022
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 10919,
+      "runtimeTriangleCount": 21834,
+      "runtimeByteSize": 526016,
+      "runtimeChecksum": "b4e838a392121acbc93e68174ca9cdf66d62a49c07b240abf35a5aa85f562711",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000009",
+      "r4ToothLibraryKey": "lower-second-premolar",
+      "r4TrainingLabel": "Mandibular second premolar"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000014",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Mandibular first molar",
+      "uid": "e1c919d6603846eca873154eeededdd6",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular First Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-first-molar-e1c919d6603846eca873154eeededdd6. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "7633ff26878ba7f160bb6b5d5ebc586f8ca776f24afe284daf3373ecbccee88a",
+      "sourceObjChecksum": "403a4e3b7b7e6564c9bce66c17b11b837c2d0eb72cd6785c63d3fc6fe5e0b3b9",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/e1c919d6603846eca873154eeededdd6/mesh-original/LL6sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.47066319,
+          1.67118227,
+          4.28159236
+        ],
+        "max": [
+          2.54416155,
+          3.49685525,
+          5.50292348
+        ],
+        "spans": [
+          1.07349836,
+          1.8256729799999998,
+          1.2213311199999994
+        ]
+      },
+      "proposedFdi": 36,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        9.037763159533643,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9.037763159533643,
+        0,
+        0,
+        -9.037763159533643,
+        0,
+        0,
+        -18.142517563578117,
+        44.215068396312695,
+        -24.838749552671803,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000005",
+      "runtimeFile": "r4-denture-tooth-lower-first-molar.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000014",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.851011753082275,
+          -5.519050598144531,
+          -0.3499999940395355
+        ],
+        "max": [
+          4.851011753082275,
+          4.414562702178955,
+          6.764999866485596
+        ],
+        "spans": [
+          9.70202350616455,
+          9.933613300323486,
+          7.114999860525131
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 13811,
+      "runtimeTriangleCount": 27618,
+      "runtimeByteSize": 664812,
+      "runtimeChecksum": "0af9388623e0d2f57f898816e781e1c98baccdf37f07572e2e97248e80bda06b",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000005",
+      "r4ToothLibraryKey": "lower-first-molar",
+      "r4TrainingLabel": "Mandibular first molar"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000015",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Mandibular second molar · left",
+      "uid": "b77dcbc5052e4740b87cdb1964649742",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-second-molar-b77dcbc5052e4740b87cdb1964649742",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular Second Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-second-molar-b77dcbc5052e4740b87cdb1964649742. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "0ed2b404755aeea24bc3ef85f00d897b49164dbaecf0adfa5c73a56bdc91ba35",
+      "sourceObjChecksum": "519461f794e20edbbda27c8d6ffba474eb0d383234a29d6cf9f7bcd5b90c0678",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/b77dcbc5052e4740b87cdb1964649742/mesh-original/LL7sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.85634779,
+          1.89441895,
+          3.29135966
+        ],
+        "max": [
+          2.82035374,
+          3.66782808,
+          4.25107193
+        ],
+        "spans": [
+          0.9640059499999998,
+          1.7734091300000001,
+          0.9597122700000003
+        ]
+      },
+      "proposedFdi": 37,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        10.14994210613994,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.14994210613994,
+        0,
+        0,
+        -10.14994210613994,
+        0,
+        0,
+        -23.73412488859804,
+        38.277621989010505,
+        -29.848242667274413,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000000013",
+      "runtimeFile": "r4-denture-tooth-lower-second-molar-left.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000015",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.892302513122559,
+          -4.870512008666992,
+          -0.3499999940395355
+        ],
+        "max": [
+          4.892302513122559,
+          4.870512008666992,
+          7.380000114440918
+        ],
+        "spans": [
+          9.784605026245117,
+          9.741024017333984,
+          7.7300001084804535
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 13003,
+      "runtimeTriangleCount": 26002,
+      "runtimeByteSize": 626064,
+      "runtimeChecksum": "112ecb451160df6a2b1ec88d0d89ef258ddcfde49da18a642bc182212ecb773b",
+      "r4DerivationNotes": "Source OBJ coordinates and physical units remain unknown. Runtime-only rigid rotation, centering, and a tooth-class display scale were authored for this exercise. The scale is not a measured source-unit conversion or clinical dimension. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000000013",
+      "r4ToothLibraryKey": "lower-second-molar-left",
+      "r4TrainingLabel": "Mandibular second molar · left"
+    },
+    {
+      "id": "d5000000-0000-5000-9000-000000000016",
+      "assetState": "private_training_approved",
+      "kind": "denture_tooth_training_derivative",
+      "title": "R4 denture tooth · Mandibular second molar · mirrored right",
+      "uid": "b77dcbc5052e4740b87cdb1964649742",
+      "originalUrl": "https://sketchfab.com/3d-models/mandibular-second-molar-b77dcbc5052e4740b87cdb1964649742",
+      "licenseName": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Mandibular Second Molar by University of Dundee, School of Dentistry is licensed under Creative Commons Attribution. Source: https://sketchfab.com/3d-models/mandibular-second-molar-b77dcbc5052e4740b87cdb1964649742. License: https://creativecommons.org/licenses/by/4.0/. Changes: describe modifications, if any.",
+      "sourceArchiveChecksum": "0ed2b404755aeea24bc3ef85f00d897b49164dbaecf0adfa5c73a56bdc91ba35",
+      "sourceObjChecksum": "519461f794e20edbbda27c8d6ffba474eb0d383234a29d6cf9f7bcd5b90c0678",
+      "sourceObjPath": ".research/dundee-permanent-teeth/extracted/b77dcbc5052e4740b87cdb1964649742/mesh-original/LL7sketch_1.OBJ",
+      "rawSourceBounds": {
+        "min": [
+          1.85634779,
+          1.89441895,
+          3.29135966
+        ],
+        "max": [
+          2.82035374,
+          3.66782808,
+          4.25107193
+        ],
+        "spans": [
+          0.9640059499999998,
+          1.7734091300000001,
+          0.9597122700000003
+        ]
+      },
+      "proposedFdi": 47,
+      "originalOrDerived": "derived_training_geometry",
+      "sourceUnitStatus": "unknown",
+      "sourceUnit": "unknown",
+      "unitScaleToMm": null,
+      "canonicalRuntimeUnit": "mm",
+      "coordinateStatus": "unknown",
+      "normalizationNotes": "Controlled OFFLINE sagittal mirror of the source FDI 37 training mesh to FDI 47. Triangle winding was reversed after reflection; runtime vertex normals were recomputed; closed-manifold topology was checked. Exact symmetry is an educational derivation, not a natural contralateral specimen. Source units and patient/source-image provenance remain unknown; not expert reviewed. Separate R4 artificial denture-tooth training asset with a distinct runtime file and synthetic ivory material. Based on natural source anatomy as a morphology reference; not a commercial denture tooth system. The mandibular canine object is explicitly an upper-canine training approximation.",
+      "originalToCanonicalTrainingMatrix": [
+        10.14994210613994,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10.14994210613994,
+        0,
+        0,
+        -10.14994210613994,
+        0,
+        0,
+        -23.73412488859804,
+        38.277621989010505,
+        -29.848242667274413,
+        1
+      ],
+      "morphologyQaStatus": "SOURCE_MORPHOLOGY_DERIVED_DENTURE_TOOTH_TRAINING_ASSET_NOT_EXPERT_REVIEWED",
+      "reviewStatus": "private_training_approved_unreviewed",
+      "expertReviewStatus": "not_reviewed",
+      "patientProvenanceStatus": "unknown",
+      "derivedFromAssetId": "d4000000-0000-5000-8000-000000001001",
+      "runtimeFile": "r4-denture-tooth-lower-second-molar-right.glb",
+      "runtimePath": "/api/private-training-assets/d5000000-0000-5000-9000-000000000016",
+      "format": "glb",
+      "runtimeBoundsMm": {
+        "min": [
+          -4.892302513122559,
+          -4.870512008666992,
+          -0.3499999940395355
+        ],
+        "max": [
+          4.892302513122559,
+          4.870512008666992,
+          7.380000114440918
+        ],
+        "spans": [
+          9.784605026245117,
+          9.741024017333984,
+          7.7300001084804535
+        ],
+        "unit": "mm"
+      },
+      "runtimeVertexCount": 13003,
+      "runtimeTriangleCount": 26002,
+      "mirrorOfFdi": 37,
+      "offlineMirrorTopology": {
+        "triangleCount": 54952,
+        "degenerateTriangles": 0,
+        "openBoundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "sameDirectionTwoFaceEdges": 0,
+        "signedMeshVolume": 710.1861443276434
+      },
+      "runtimeByteSize": 626104,
+      "runtimeChecksum": "c0785b509038279ee41a2d62b7faea6d97342a0424a6bc8035b20c61a85cd4d1",
+      "r4DerivationNotes": "Controlled OFFLINE sagittal mirror of the source FDI 37 training mesh to FDI 47. Triangle winding was reversed after reflection; runtime vertex normals were recomputed; closed-manifold topology was checked. Exact symmetry is an educational derivation, not a natural contralateral specimen. Source units and patient/source-image provenance remain unknown; not expert reviewed. Root context was removed at the source-frame cervical datum -0.35 exercise mm, capped, and normals recomputed. This is not a universal dimension.",
+      "sourceRuntimeAssetId": "d4000000-0000-5000-8000-000000001001",
+      "r4ToothLibraryKey": "lower-second-molar-right",
+      "r4TrainingLabel": "Mandibular second molar · mirrored right"
+    }
+  ]
+}

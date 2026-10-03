@@ -554,6 +554,29 @@ type CadObjectRuntime = {
 
 React state stores the ID/version, not the `Float32Array` vertex data.
 
+For Phase 8, each imported CAD object keeps an immutable map of geometry
+revisions outside Zustand. A revision maps stable child-mesh keys to
+`BufferGeometry` instances, so GLB child transforms and hierarchy remain
+unchanged when one child is edited. The object transform remains independent
+from its geometry revision. Workers receive transferable typed arrays and
+operation parameters; a validated result is installed as a new revision only
+after the worker succeeds.
+
+Mesh history commands pin their before/after revisions. The runtime history
+budget is `MAX_MESH_HISTORY_BYTES = 128 MiB` with a 12-command ceiling; oldest
+undo commands are released first. The active revision and original imported
+revision remain available. A single edit can exceed the history budget when
+needed to retain its immediate undo state. Removing an unreferenced revision
+disposes its geometry and BVH; revision maps and BVHs are session-only and are
+not serialized. Imported and edited geometry still must be re-imported after a
+reload until persistent case revisions are implemented in Phase 13.
+
+Geometry operations use indexed canonical triangle data. Non-indexed source
+geometry is converted to sequential indices for editing, while source vertex
+coordinates and child transforms are preserved. The current renderer builds
+three-mesh-bvh trees during idle time for face raycasting and disposes/rebuilds
+them as revisions change.
+
 ---
 
 # 11. Canonical Coordinate System
@@ -1121,12 +1144,15 @@ The initial system is educational, not patient-specific biomechanics.
 
 Movement parameters should be configurable by scenario/preset.
 
+Use right-handed millimeters throughout the articulator: +X is left, +Y is anterior, and +Z is superior. Keep the upper arch fixed and transform the lower arch relative to its saved reference. Open/close rotates around the configured hinge axis and pivot; protrusion follows +Y; left and right lateral trajectories follow +X and -X. These are deterministic educational trajectories, not patient-specific motion claims. Persist the setup and arch assignments as case metadata.
+
 During motion:
 
 1. update jaw transform;
-2. request contact preview;
-3. render collision/contact colors;
-4. avoid full expensive recomputation every animation frame if unnecessary.
+2. request sampled contact preview through the shared analysis worker and BVH path;
+3. report per-sample contact states and progress;
+4. reject stale results after target geometry, transforms, or configuration changes;
+5. avoid full expensive recomputation every animation frame if unnecessary.
 
 ---
 

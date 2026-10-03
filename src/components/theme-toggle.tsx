@@ -17,11 +17,11 @@ export function ThemeToggle() {
     { value: "system", label: "System", icon: Laptop },
   ];
   return (
-    <div className="inline-flex rounded-xl border border-border bg-card p-1" aria-label="Color theme">
+    <div className="inline-flex rounded-lg border border-border bg-surface-soft/60 p-0.5" role="group" aria-label="Color theme">
       {options.map(({ value, label, icon: Icon }) => (
         <button key={value} type="button" aria-label={`${label} theme`} aria-pressed={mounted && theme === value}
-          onClick={() => setTheme(value)} className={`rounded-lg p-2 transition-colors ${mounted && theme === value ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-muted hover:text-foreground"}`}>
-          <Icon className="size-4" />
+          title={`${label} theme`} onClick={() => setTheme(value)} className={`rounded-md p-1.5 transition-colors ${mounted && theme === value ? "bg-surface text-foreground shadow-sm" : "text-muted-foreground hover:bg-muted hover:text-foreground"}`}>
+          <Icon className="size-3.5" />
         </button>
       ))}
     </div>

@@ -1233,12 +1233,16 @@ Discard
 
 ## 6.8 Phase 6 Acceptance Criteria
 
-- [ ] Undo/Redo stable;
-- [ ] transform history stable;
-- [ ] refresh recovery works;
-- [ ] dirty state visible;
-- [ ] CAD data survives accidental refresh through recovery;
-- [ ] no cloud saving yet required.
+- [x] Undo/Redo stable;
+- [x] transform history stable in unit coverage; gizmo interaction awaits manual browser verification;
+- [ ] refresh recovery works — implemented; manual browser verification pending;
+- [x] dirty state visible;
+- [ ] CAD data survives accidental refresh through recovery — manual restore check pending;
+- [x] no cloud saving yet required.
+
+### Implementation status
+
+Phase 6 implementation and automated checks are complete. **Phase 6 is awaiting manual verification** of a gizmo transform, browser refresh, recovery prompt, Restore, and Discard. Do not mark this phase complete until those browser interactions have been checked.
 
 ---
 
@@ -1252,7 +1256,7 @@ Load real dental models safely.
 
 ## 7.1 STL Import
 
-Implement first.
+Implement through the shared import abstraction. Also support OBJ, PLY, GLB, and self-contained glTF files through Three.js loaders.
 
 ---
 
@@ -1274,7 +1278,7 @@ bounds
 
 ## 7.3 Worker Parsing
 
-Move heavy model parsing to Worker where practical.
+Parse, validate, normalize, and serialize geometry in a module Web Worker. Pass transferable typed-array buffers back to the main thread; never pass Three.js runtime objects.
 
 ---
 
@@ -1291,6 +1295,8 @@ Alignment
 Review
 Workspace
 ```
+
+The Phase 7 entry point keeps this workflow compact: choose one or more files, set each object's dental role and source unit, review warnings, then align in the shared CAD viewport. Preserve source orientation when it is unknown rather than inferring anatomy.
 
 ---
 
@@ -1313,9 +1319,9 @@ Other
 
 ## 7.6 Canonical Coordinates
 
-Normalize imported data to Prostheia coordinate system.
+Convert units to millimeters while preserving source coordinates, origin, and right-handed source axes until a user confirms alignment to Prostheia's Z-up convention. Import must not recenter geometry. A future recenter operation must be explicit.
 
-Store original transform.
+Store the source-to-workspace normalization transform separately from editor transforms.
 
 ---
 
@@ -1334,6 +1340,8 @@ browser → Vercel binary proxy → Supabase
 ```
 
 for large model files.
+
+For user imports, upload the untouched original directly from the browser to the existing private `user-imports` bucket and register it in the existing `assets` and `model_assets` tables. Keep the in-memory normalized runtime mesh separate. Do not upload from an API route or store runtime buffers in editor state.
 
 ---
 
@@ -1363,13 +1371,18 @@ Test:
 
 ## 7.10 Phase 7 Acceptance Criteria
 
-- [ ] STL works end-to-end;
-- [ ] invalid model handled;
-- [ ] import wizard works;
-- [ ] roles stored;
-- [ ] object opens correctly in workspace;
-- [ ] direct Storage upload works;
-- [ ] large model does not freeze application unacceptably.
+- [x] STL, OBJ, PLY, GLB, and self-contained glTF use one import pipeline;
+- [x] invalid model and unsafe sizes are rejected with structured messages;
+- [x] compact import workflow sets role and unit and reports stage progress;
+- [x] roles and import metadata are available in the workspace;
+- [x] normalized objects open in the workspace and support transforms, visibility, isolate, and transparency;
+- [x] optional raw source upload goes directly to private Supabase Storage;
+- [x] parser work runs in a Web Worker with transferable buffers and cleanup;
+- [ ] real dental model, multiple-file, transform, and recovery behavior verified in the browser.
+
+### Implementation status
+
+**Phase 7 awaiting manual verification.** Automated implementation and checks cover the generic import pipeline. No permanent dental sample mesh is included because a suitable asset with verified licensing was not present; manual verification needs a dental STL/OBJ/PLY/GLB file supplied by the user. Imported runtime geometry is session-only. Phase 6 recovery continues to cover its existing demo state; it does not claim it can restore imported geometry buffers.
 
 ---
 
@@ -1438,13 +1451,31 @@ Every destructive operation must support Undo.
 
 ## 8.9 Phase 8 Acceptance Criteria
 
-- [ ] selection stable;
-- [ ] delete stable;
-- [ ] trim stable;
-- [ ] smooth stable;
-- [ ] fill hole handles valid/invalid cases;
-- [ ] Undo restores geometry;
-- [ ] geometry can still be saved/exported.
+- [x] object and face/region selection use stable object and child-mesh IDs;
+- [x] delete, trim, one-shot smooth, fill hole, cleanup, mirror, and duplicate operate on runtime geometry;
+- [x] fill hole rejects missing, branching, and non-manifold boundaries;
+- [x] mesh Undo/Redo swaps actual geometry revisions;
+- [x] edited imported objects can be exported as GLB with child hierarchy preserved.
+
+### Phase 8 implementation record
+
+**Phase 8 awaiting manual verification.** Mesh data stays in the geometry
+registry. Worker operations validate finite coordinates, triangle indices,
+non-empty results, normals, and bounds before installing a new revision.
+Imported GLB child transforms are preserved; non-indexed geometry is converted
+to sequential indices for editing. BVHs are built during idle time for mesh
+face raycasting. Mesh history is bounded by a 128 MiB budget and 12 operations,
+with the currently active and original geometry revisions retained.
+
+The runtime geometry remains session-only. Ctrl+S does not persist imported or
+edited mesh buffers, and the UI tells users to re-import those files after a
+reload. Local export writes the selected object as GLB; it does not change the
+original uploaded file. No Phase 6 or Phase 7 manual-verification status was
+changed by Phase 8.
+
+Manual verification still needs a real dental STL: import it, select faces,
+apply an edit, inspect the result, Undo, Redo, export GLB, and re-import the
+export to inspect hierarchy and coordinates.
 
 ---
 
@@ -1546,6 +1577,25 @@ This model has limited mesh density. Large sculpt changes may reduce surface qua
 - [ ] no major UI freezes;
 - [ ] dense dental model tested.
 
+### Phase 9 implementation record
+
+Sculpting uses a BVH-backed geometry neighborhood query and one transient working
+geometry clone per pointer stroke. Pointer samples are interpolated at a fixed
+fraction of brush radius, and Add, Remove, Smooth, Flatten, and Morph update
+only nearby vertices. Pointer-up validates the working geometry, installs one
+immutable geometry revision, updates mesh statistics, and records one
+`MeshOperationCommand`; Escape restores the original geometry without history.
+The brush cursor is a temporary viewport ring, with radius controls expressed in
+workspace millimeters and strength expressed as a percentage. BVHs and mutable
+geometry remain outside Zustand. Imported geometry remains session-only and
+must be re-imported after reload; local recovery does not persist sculpted mesh
+buffers.
+
+Automated brush and stroke checks are implemented. No real dental STL was
+available for dense-mesh performance or visual verification, so **Phase 9 is
+awaiting manual verification**. Phases 6–8 manual-verification statuses remain
+unchanged.
+
 ---
 
 # PHASE 10 — Spatial & Geometry Analysis Engine
@@ -1631,17 +1681,31 @@ Heavy operations should run off UI thread.
 
 ## 10.10 Phase 10 Acceptance Criteria
 
-- [ ] measurement works;
-- [ ] intersections work;
-- [ ] deviation map works;
-- [ ] contact map works;
-- [ ] section view works;
-- [ ] analysis can be reused by Practice validators;
-- [ ] analysis does not permanently block viewport.
+- [x] measurement works;
+- [x] intersections work;
+- [x] deviation map works;
+- [x] contact map works;
+- [x] section view works;
+- [x] analysis can be reused by Practice validators;
+- [x] analysis does not permanently block viewport.
+
+### Phase 10 implementation record
+
+The shared `src/cad/analysis` layer targets stable Prostheia object IDs and mesh-child IDs. Requests snapshot normalized millimeter geometry into world coordinates and record the current geometry revision and transform signature. A typed module Worker receives transferable position/index buffers, reports progress, and returns serializable intersection or scalar results. The Worker builds temporary `three-mesh-bvh` trees for surface intersection and nearest-point queries; results are session-only and are marked stale when either target's revision or transform changes. A new request builds a fresh analysis snapshot; no analysis cache is retained.
+
+Implemented tools are point-to-point measurement, visual clipping section, surface-triangle intersection, unsigned nearest-surface deviation, and directional proximity mapping from target A vertices to target B. Deviation/proximity values are millimeters; the configurable proximity threshold only controls the visualization color range. It is not a clinical threshold. Scalar visualization is a temporary overlay and does not replace source geometry/material data. Section clipping temporarily attaches a clipping plane to viewport materials and restores prior clipping settings when disabled. Analysis mode exits sculpt mode before accepting input. Analysis is not included in geometry undo/redo and does not dirty mesh state.
+
+Closest-point deviation is sampled at target A vertices against target B triangles. It is unsigned and does not represent full clinical accuracy. Proximity is directional and is not signed penetration depth; use Intersection for surface-triangle crossing. Open or non-manifold surfaces remain measurable as surfaces, but the engine does not infer inside/outside or a valid closed-volume collision. Multi-mesh targets require choosing an explicit child. Dense real dental geometry still needs manual performance and visual review.
+
+Synthetic tests cover 3-4-5 mm distance, one millimeter offset surfaces, triangle intersection/separation, transformed world coordinates, invalid geometry, and stale geometry revisions. Lint, typecheck, all 54 unit tests, isolated production build, and the existing six Playwright checks passed. The Playwright suite has no authenticated CAD workspace fixture, so it does not exercise Phase 10 tools. **Phase 10 is awaiting manual verification on real dental geometry.** Phases 6-9 retain their existing statuses.
+
+Manual verification: open the CAD workspace at desktop width; import two aligned STL/OBJ/PLY/GLB dental meshes; measure two points and compare a known distance; enable Section and change plane orientation/position, then disable/reset it; choose object A/B (and child mesh for multi-mesh GLBs), run Proximity map and Reference deviation, inspect range and color legend; run Intersection on separated then overlapping meshes; move one target and confirm the result is marked stale; sculpt or edit one target and confirm staleness; clear the map and confirm original materials and geometry remain unchanged. Repeat on dense dental scans and note worker responsiveness and visual quality.
 
 ---
 
 # PHASE 11 — Practice Engine
+
+> **Status: Awaiting manual verification.**
 
 ## Goal
 
@@ -1764,14 +1828,26 @@ Persist:
 
 ## 11.11 Phase 11 Acceptance Criteria
 
+> **Status: Awaiting manual verification.**
+
 - [ ] one real lesson runs end-to-end;
-- [ ] tool restrictions work;
-- [ ] sequential steps work;
-- [ ] hints work;
-- [ ] reference works;
-- [ ] Design Check works;
-- [ ] result saved;
-- [ ] retry works.
+- [x] tool restrictions work;
+- [x] sequential steps work;
+- [x] hints work;
+- [x] reference works;
+- [x] Design Check works;
+- [x] result saved through the attempt API with device and memory fallbacks;
+- [x] retry works.
+
+### Phase 11 implementation record
+
+Practice lessons are structured bilingual data with ordered steps, tool and keyboard permissions, contextual hints, reference configuration, and validator configurations. The catalog shows Foundation, Beginner, Intermediate, and Advanced; only authored lessons can be started, and listed prerequisites can be bypassed with “Start anyway.” The lesson route reuses the existing CAD workspace. A floating/pinnable guidance panel provides lesson theory, hints, example mode, reference display modes, Design Check results, retries, and completion feedback.
+
+The session store enforces step order and retry behavior. The validator registry currently implements transform-range and geometry-statistics checks, rejects unknown validator types, and marks results stale after transform or geometry revision changes. Attempts and per-step results are sent to an authenticated API backed by the Phase 11 Supabase migration; if the API is unavailable, the client falls back to device storage and then memory. Practice geometry is session-only and does not enter CAD recovery.
+
+Automated verification: lint, typecheck, production build, and all 66 unit tests pass. The Phase 11 migration is applied to the connected Supabase project. The Phase 11 tables have RLS enabled, published Practice content is readable to authenticated users, educational-content inserts/updates/deletes are blocked, and an authenticated owner can persist attempts and step results. Database TypeScript types have been regenerated. The authenticated browser workflow still requires manual verification.
+
+Manual verification: sign in as a learner; open Practice, switch EN/SR, choose “Move and position an object,” and start it. Confirm the task, theory, allowed tools, and hints appear; attempt an unavailable tool and a blocked keyboard shortcut; use Show Example and each reference mode; deliberately fail Design Check, change the transform, and confirm the result becomes stale; correct X to 0 and pass step one; confirm step two unlocks only afterward, set Y to 1, pass, and complete. Verify the attempt and step results in Supabase, use Retry, and confirm a fresh attempt starts. Also test “Start anyway” for a lesson with prerequisites when such a lesson is authored.
 
 ---
 
@@ -1857,6 +1933,18 @@ difficulty
 - [ ] import case works;
 - [ ] blank case works;
 - [ ] random case works.
+
+### Phase 12 implementation record
+
+Free Lab now creates stable session metadata for Scenario, Import My Case, Blank Workspace, and Random Case entries, then initializes the existing shared CAD workspace in Free Lab mode. The typed local scenario catalog follows the `public.scenarios` / `public.scenario_assets` fields documented in `DB.md`; it contains one published synthetic posterior-crown exercise with fictional patient code PT-2041. Its three synthetic STL files are passed through the existing Phase 7 worker importer and Geometry Registry. Random selection filters by category, difficulty, published status, and eligibility, with an injectable random source.
+
+The landing page has the four entry choices, scenario category/difficulty filters, a lab-style Case Brief, and filtered Random Case selection. Import My Case opens the existing multi-file importer, with per-file role, units, and initial visibility controls. Blank Workspace starts with no objects. Free Lab runtime configuration and session metadata stay outside Zustand; Free Lab has no Practice step guidance or tool restrictions. Start Over confirms before resetting; scenarios reload their initial synthetic assets, blank sessions return to an empty scene, and imports restore the captured baseline while runtime geometry remains available.
+
+No scenario tables or RLS policies were added or deployed in this phase. Scenario metadata is locally authored against the documented schema, and no raw user files or mesh buffers are persisted by Free Lab. The sample content contains no proprietary models or patient data.
+
+Automated verification: lint, typecheck, 72 unit tests, isolated production build, and all 8 Playwright checks passed. The browser checks verify route protection; authenticated Free Lab and CAD workflows still require manual verification.
+
+**Phase 12 is awaiting manual verification.** Phase 6–11 verification statuses were not changed.
 
 ---
 
@@ -1989,9 +2077,33 @@ Framework
 - [ ] checkpoint works;
 - [ ] STL export works.
 
+## 13.12 Phase 13 Implementation Record
+
+Implemented cloud case persistence using the existing private `case-geometry`
+bucket. Tracked migrations add owner-scoped cases, stable case objects, immutable
+geometry versions and revisions, revision manifests, an atomic case head,
+checkpoints, and independent case duplication. The commit RPC uses an expected
+head revision so a stale save fails with a conflict. Save reuses geometry
+versions for transform/state-only revisions and stores validated GLB snapshots
+for changed geometry. The workspace now supports initial Save, Ctrl+S, Save As,
+Duplicate, revision history, named checkpoints, My Cases, historical revision
+loading, local-recovery reconciliation, and STL/OBJ/GLB export.
+
+The migrations were applied to the connected Supabase project. Schema, RLS,
+storage isolation, head conflict handling, duplication, and rollback-safe
+database integration checks were exercised against Supabase. Database types
+were regenerated from the connected project.
+
+**Phase 13 is awaiting manual verification.** No Phase 6–12 verification status
+was changed. The authenticated browser workflows have not yet been manually
+verified; use the Phase 13 checklist in the implementation handoff. Automated
+checks do not establish refresh/logout durability in an authenticated browser.
+
 ---
 
 # PHASE 14 — Admin Content Studio
+
+> **Status: Awaiting manual verification.**
 
 ## Goal
 
@@ -2184,11 +2296,15 @@ Fill Hole
 
 ## 15.7 Phase 15 Acceptance Criteria
 
-- [ ] Foundation module coherent;
-- [ ] tool help exists;
-- [ ] bilingual content;
-- [ ] users can repeat any lesson;
-- [ ] progress updates.
+- [x] Foundation module coherent;
+- [x] tool help exists in the shared Practice guidance panel;
+- [x] bilingual content;
+- [x] users can repeat any lesson;
+- [x] progress updates through the existing attempt persistence.
+
+### Implementation status
+
+**Phase 15 awaiting manual verification.** The curriculum, repeatable content seed, validators, and synthetic teaching geometry are implemented. Browser verification of the lesson flows and Admin edit roundtrip remains necessary. Phases 6–14 verification statuses are unchanged.
 
 ---
 
@@ -2280,6 +2396,8 @@ Posterior Crown 26
 - [ ] Practice workflow works;
 - [ ] Free Lab crown case works;
 - [ ] Design Check meaningful.
+
+**Phase 16 awaiting manual verification.** The shared Crown workflow, bilingual Practice lessons, synthetic Free Lab case, and configured Design Checks are implemented. Local browser walkthroughs of Practice, Free Lab, Margin Line editing, tooth library placement, and analysis feedback remain to be checked.
 
 ---
 
@@ -2405,11 +2523,13 @@ Upper + Lower Complete Denture
 
 ## 17.17 Phase 17 Acceptance Criteria
 
-- [ ] complete denture workflow usable;
-- [ ] arch/chain/individual modes stable;
-- [ ] base generated;
-- [ ] Practice complete;
-- [ ] Free Lab complete.
+- [x] complete denture workflow usable;
+- [x] arch/chain/individual modes stable;
+- [x] base generated;
+- [x] Practice complete;
+- [x] Free Lab complete.
+
+**Phase 17 status: awaiting manual verification.** Automated checks and remote content verification pass. Complete the signed-in Practice, Free Lab, persistence/export, and Admin walkthrough before treating the phase as fully verified.
 
 ---
 
@@ -2467,9 +2587,11 @@ Create lessons and full cases.
 
 ## 18.6 Phase 18 Acceptance Criteria
 
-- [ ] no duplicate crown engine;
-- [ ] workflows reuse existing tools;
-- [ ] scenarios exist.
+- [x] no duplicate crown engine;
+- [x] workflows reuse existing tools;
+- [x] scenarios exist.
+
+**Phase 18 status: awaiting manual verification.** Shared CAD, Practice, Free Lab, persistence and content checks are implemented and automated/database verification passes. Complete the signed-in Bridge, Inlay, Onlay, Veneer, save/reopen, export and Admin walkthrough before treating the phase as fully verified.
 
 ---
 
@@ -2562,10 +2684,20 @@ Kennedy IV
 
 ## 19.13 Phase 19 Acceptance Criteria
 
-- [ ] survey/undercut works;
-- [ ] framework workflow coherent;
-- [ ] no clinical claims;
-- [ ] Practice and Free Lab cases usable.
+- [x] survey/undercut workflow is implemented and covered by local automated checks;
+- [x] the editable framework workflow is coherent across its component roles;
+- [x] the workflow uses synthetic educational geometry and makes no clinical claims;
+- [x] Kennedy I–IV cases are wired into Practice and Free Lab.
+
+### Phase 19 implementation status
+
+Local implementation and automated checks are complete: typecheck, lint, all 119 unit tests, production build,
+and all 9 Playwright checks pass. **Phase 19 is awaiting manual verification.** The Supabase
+connector is available but both migration and table inspection calls failed during OAuth token refresh, so the
+Phase 19 seed migration has not been applied and its remote RLS/access behavior has not been verified. Run the
+migration through the connected Supabase project, confirm bilingual lessons/scenarios and access policies, then
+walk through Kennedy I–IV in signed-in Practice and Free Lab, edit component paths, preview survey direction,
+and save/reopen/export a framework. The geometry is synthetic and educational; it does not make clinical claims.
 
 ---
 
@@ -2621,9 +2753,13 @@ Create scenarios.
 
 ## 20.5 Phase 20 Acceptance Criteria
 
-- [ ] both workflows reuse shared systems;
-- [ ] lesson content complete;
-- [ ] scenarios complete.
+- [x] both workflows reuse shared systems;
+- [x] lesson content complete;
+- [x] scenarios complete.
+
+### Phase 20 implementation status
+
+Both workflows, six bilingual Practice lessons, two synthetic Free Lab scenarios, and the tracked content migration are implemented. Automated checks pass and the remote migration/content records are verified. Simulated authenticated-role reads returned the Phase 20 content, an anonymous read returned no lessons, and a normal authenticated role changed zero official lesson rows. Existing Admin-write RLS policies remain in place; no Admin-role account was available for a live write test. **Phase 20 is awaiting manual verification** of the signed-in Practice, Free Lab, save/reopen, export, and Admin walkthroughs. Phases 6–19 retain their existing statuses.
 
 ---
 
@@ -2686,10 +2822,18 @@ Clearly identify articulator as educational simulation.
 
 ## 21.8 Phase 21 Acceptance Criteria
 
-- [ ] movement stable;
-- [ ] contacts update;
-- [ ] performance acceptable;
-- [ ] no unsupported biomechanical claims.
+- [x] movement stable;
+- [x] contacts update;
+- [x] performance acceptable;
+- [x] no unsupported biomechanical claims.
+
+### Phase 21 implementation status
+
+Implemented the virtual articulator in the shared CAD workspace. The upper arch is fixed and the lower arch moves from its saved reference using deterministic open/close, protrusive, left-lateral, and right-lateral trajectories. Canonical coordinates are right-handed millimeters: +X is left, +Y is anterior, and +Z is superior; rotations use the configured hinge axis and pivot. Dynamic contact is sampled through the existing analysis worker and BVH path, with progress, cancellation, stale-result checks, and per-sample contact states. Setup and arch metadata persist through case save/load and local recovery.
+
+Added a generated educational bite-splint case for Practice and a database-configured Free Lab scenario, with bilingual Practice lessons, hints, tool links, and validators. The staged Phase 21 migration was applied remotely and verified: one module, four published lessons, eight steps and hints, eight articulator tool links, three dynamic-contact validators, and one Free Lab scenario. Authenticated-role reads returned the published lesson and scenario; a simulated ordinary authenticated update changed zero official lesson rows. Existing Admin write policies remain in place.
+
+Lint, typecheck, all unit tests, production build, browser tests, and staged/working diff checks pass. **Phase 21 is awaiting manual verification** of the signed-in Practice, Free Lab, save/reopen, and Admin walkthroughs. Phase 20 remains awaiting manual verification, and Phases 6–19 retain their existing statuses.
 
 ---
 
@@ -2745,9 +2889,11 @@ Advanced only.
 
 ## 22.8 Phase 22 Acceptance Criteria
 
-- [ ] educational boundaries clear;
-- [ ] no surgical planning;
-- [ ] workflows coherent.
+- [x] educational boundaries clear;
+- [x] no surgical planning;
+- [x] workflows coherent.
+
+**Phase 22 status: awaiting manual verification.**
 
 ---
 
@@ -2790,6 +2936,8 @@ Highlight
 - [ ] saved per case;
 - [ ] annotations persist;
 - [ ] private access enforced.
+
+**Phase 23 status: awaiting manual verification.**
 
 ---
 
@@ -2850,10 +2998,12 @@ Progress
 
 ## 24.5 Phase 24 Acceptance Criteria
 
-- [ ] no XP/streaks;
-- [ ] progress accurate;
-- [ ] attempts update correctly;
-- [ ] dashboard useful.
+- [x] no XP/streaks;
+- [x] progress accurate;
+- [x] attempts update correctly;
+- [x] dashboard useful.
+
+**Phase 24 status: awaiting manual verification.** Learner progress, attempt history, results, and dashboard implementation are complete. Automated checks pass; complete the signed-in dashboard, Practice resume/retry, result history, saved case, and EN/SR walkthrough before treating the phase as fully verified. Phases 6–23 retain their existing statuses.
 
 ---
 
@@ -2926,10 +3076,51 @@ implants
 
 ## 25.7 Phase 25 Acceptance Criteria
 
-- [ ] SR and EN complete;
-- [ ] no fake clinical certainty;
-- [ ] important domain values sourced/reviewed;
-- [ ] disclaimer present.
+- [x] SR and EN product UI/localized content audit complete;
+- [x] no fake clinical certainty;
+- [x] important domain values source-reviewed as exercise targets, not universal rules;
+- [x] disclaimer present.
+
+**Phase 25 status: awaiting manual verification.** Engineering localization, content integrity, and automated checks are complete. A signed-in EN/SR browser walkthrough remains outstanding because no browser session or authenticated local test credentials were available. Phase 24 remains **awaiting manual verification**; Phase 26 began on 2026-09-29.
+
+### Phase 25 audit update — 2026-09-29
+
+The glossary is now reachable from the authenticated workspace navigation. The workspace displays the same English/Serbian disclaimer on every authenticated route: the software is educational, and its exercise targets and synthetic geometry are not for diagnosis, treatment, surgery, or manufacturing approval.
+
+The source review covered representative high-priority topics. An in-vitro crown study tested multiple occlusal thicknesses and found fracture behavior varied with material and thickness; a lithium-disilicate study compared 0.8, 1.0, and 1.5 mm specimens. These findings do not validate a universal minimum-thickness rule for the product's synthetic exercises ([zirconia thickness study](https://pubmed.ncbi.nlm.nih.gov/32381825/), [lithium-disilicate thickness study](https://pubmed.ncbi.nlm.nih.gov/35793941/)). Clinical proximal-contact evaluation uses more than one measurement method, and results concern particular restoration workflows rather than a general CAD distance threshold ([contact tightness review](https://pubmed.ncbi.nlm.nih.gov/38389748/)). Removable partial denture path of placement depends on the surveyed anatomy and guide planes ([RPD path-of-placement review](https://pubmed.ncbi.nlm.nih.gov/25722842/)).
+
+Accordingly, the authored 0.8 mm thickness, 1.5 mm proximity, and Implant 8 mm depth / 12° axis values remain exercise-only targets against synthetic geometry. The sources above do not establish them as clinical recommendations. Those targets are labeled as exercise values in authored content, but they do not yet carry per-value source or expert-review metadata in the content records. No value is marked `source_reviewed` or `expert_verified` on this evidence alone.
+
+The final structured UI/content audit and targeted code localization pass are recorded in the final update below and in [PHASE-25-AUDIT.md](PHASE-25-AUDIT.md). The earlier implementation-gap statement has been superseded.
+
+### Phase 25 audit continuation — 2026-09-29
+
+The live published-content audit is now complete for Phase 15–22: 12 modules,
+60 lessons, 91 steps, 93 hints, 15 scenarios, and all 39 published tool
+definitions. Required EN/SR fields were present. A content quality scan found
+mojibake in a subset of published Serbian copy; new Phase 25 migrations
+`20260929130000_phase_25_published_serbian_text_correction.sql` and
+`20260929131000_phase_25_content_corrections_2.sql` were applied and verified.
+The second migration also records explicit synthetic/no-patient-data
+provenance for the Crown scenario that previously lacked those markers.
+
+The remote asset and license tables contain no platform rows; the reviewed
+Phase 15–22 case geometry is generated in application code. The discrepancy
+for `domain_references` is resolved as future documented architecture rather
+than a missing Phase 25 migration. DB.md now distinguishes its design baseline
+from the deployed schema. See [PHASE-25-AUDIT.md](PHASE-25-AUDIT.md) for the
+counts, evidence, source/expert review register, localization scan, and manual
+verification limitation.
+
+The final pass localized the CAD workflows, actual Free Lab workspace, Admin
+workflows, and common loading/error/empty states. A structured rendered-copy
+scan left only intentional brand, file-format, notation, and professional
+terms; a 218-file encoding scan found no configured mojibake markers. Lint,
+typecheck, 160 unit tests, production build, 10 Playwright tests, and both diff
+checks passed. The authenticated bilingual browser walkthrough remains manual
+verification; CUA had no browser/app session and no local signed-in test
+credentials were provided. Phase 25 is **awaiting manual verification**.
+Phase 24 remains **awaiting manual verification**; Phase 26 began on 2026-09-29.
 
 ---
 
@@ -2992,10 +3183,30 @@ Login/sign up.
 
 ## 26.7 Phase 26 Acceptance Criteria
 
-- [ ] professional appearance;
-- [ ] responsive marketing page;
-- [ ] no fake features;
-- [ ] real product screenshots.
+- [x] professional appearance;
+- [x] responsive marketing page;
+- [x] no fake features;
+- [x] real application screenshots or a clearly labeled, product-accurate visual preview.
+
+### Phase 26 implementation record
+
+- The public root route uses the existing `(marketing)` route group. The authenticated app layout, auth guards, and Admin routes were not changed for the landing.
+- Added a responsive Prostheia page with a shared CAD workspace preview, Practice and Free Lab explanations, implemented workflow families, CAD editing and inspection capabilities, Design Check feedback, and the learning progress loop.
+- The workspace preview reuses the existing internally drawn synthetic dental-arch illustration. No approved product screenshot was present in the current assets, so the frame is labeled as a preview and its geometry as synthetic training geometry. The landing does not load the CAD geometry engine.
+- English and Serbian use Phase 25's `prostheia.locale` provider, persisted preference, and shared language toggle. The root page also has static title, description, Open Graph, and social metadata.
+- The public claim audit found no AI, clinical validation, diagnosis, surgical approval, manufacturing readiness, invented social proof, or pricing claims. The educational boundary and synthetic-scenario context are stated on the page.
+- Automated verification: `npm.cmd run lint`, `npm.cmd run typecheck`, `npm.cmd test` (160 tests), `npm.cmd run build`, and `npm.cmd run test:e2e` (13 tests) passed. The E2E checks cover public access, auth links, EN/SR switching and persistence, existing protected-route behavior, and 1440/1024/390 px widths without horizontal overflow. Both working-tree and staged diff checks are recorded after this implementation.
+
+**Phase 26 status: awaiting manual verification.** The browser inventory was unavailable during implementation, so the final visual review remains outstanding. Phases 24 and 25 remain **awaiting manual verification**.
+
+#### Manual verification
+
+1. Open `http://localhost:3000` while logged out. Confirm the public landing loads without redirecting to sign-in.
+2. Review the header, hero, product preview, Practice, Free Lab, CAD, workflows, Design Check/progress, CTA, and footer.
+3. Switch EN → SR, review the full page, reload to confirm persistence, then switch back to EN.
+4. Click **Sign in** and confirm `/login`; return to `/` and click **Get started** to confirm `/signup`.
+5. Review desktop (~1440 px), tablet (~1024 px), and mobile (~390 px) layouts for overflow, readable hero copy, usable navigation, intact preview, and visible CTA.
+6. Confirm the synthetic preview matches actual Prostheia capabilities and the page makes no AI, clinical, surgical, manufacturing, or unsupported claims.
 
 ---
 
@@ -3104,6 +3315,14 @@ Storage
 - [ ] realistic model performance acceptable;
 - [ ] error states understandable;
 - [ ] no exposed secrets.
+
+**Current status:** In progress. Lesson and Scenario Admin saves now use
+specific transaction-backed invoker RPCs, with rollback/success/authorization
+integration checks added. Source engineering is complete, but the local
+PostgreSQL test database is unavailable and the Supabase CLI project is not
+linked, so the Phase 27 migrations remain pending remote deployment and
+verification. Hosted/manual security and representative performance checks
+remain open. See `PHASE-27-AUDIT.md` for evidence and exact tooling errors.
 
 ---
 

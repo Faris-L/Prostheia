@@ -49,17 +49,19 @@ export async function getSessionSummary() {
     supabase.rpc("is_admin"),
   ]);
 
-  // Profile details and the navigation-only admin flag must not take down the
-  // signed-in app shell. A failed role lookup always denies the admin affordance;
-  // protected admin routes still fail closed in requireAdminUser().
+  // Profile details and the navigation-only admin flag are optional app-shell
+  // enhancements. Keep their lookup failures out of the Server Component error
+  // overlay and retain the email/deny-by-default fallbacks below.
   if (profileResult.error) {
-    console.error("Unable to load signed-in profile", {
+    console.warn("Unable to load signed-in profile; using session identity fallback.", {
+      message: profileResult.error.message,
       code: profileResult.error.code,
       status: profileResult.status,
     });
   }
   if (roleResult.error) {
-    console.error("Unable to load signed-in role summary", {
+    console.warn("Unable to load signed-in role summary; hiding admin navigation.", {
+      message: roleResult.error.message,
       code: roleResult.error.code,
       status: roleResult.status,
     });

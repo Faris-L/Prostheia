@@ -1,8 +1,9 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
-import { Layers3 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { ProstheiaMark } from "@/components/prostheia-mark";
+import { LanguageToggle } from "@/components/language-toggle";
+import { AuthIntro } from "@/components/auth-intro";
 
-export default function AuthLayout({ children }: { children: ReactNode }) {
-  return <div className="min-h-screen bg-background"><header className="flex h-[76px] items-center justify-between border-b border-border px-6"><Link href="/" className="flex items-center gap-2.5"><span className="grid size-9 place-items-center rounded-xl bg-primary text-primary-foreground"><Layers3 className="size-5"/></span><span className="text-sm font-semibold">Prostheia</span></Link><ThemeToggle/></header>{children}</div>;
+export default function AuthLayout({ children }: LayoutProps<"/">) {
+  return <div className="min-h-screen bg-background"><header className="flex h-[66px] items-center justify-between border-b border-border px-5 sm:px-8"><Link href="/" className="flex items-center gap-2.5"><ProstheiaMark className="size-9"/><span><span className="block text-sm font-bold">Prostheia</span><span className="block text-[10px] text-muted-foreground">Digital Dental Studio</span></span></Link><div className="flex items-center gap-2"><LanguageToggle/><ThemeToggle/></div></header><div className="mx-auto grid min-h-[calc(100vh-66px)] max-w-6xl items-center gap-10 px-5 py-10 lg:grid-cols-[1fr_420px] lg:px-8"><section className="hidden max-w-xl lg:block"><AuthIntro/><div className="mt-8 max-w-[400px] rounded-2xl border border-border bg-surface-blue p-3"><div className="h-[250px]"><svg viewBox="0 0 520 360" className="h-full w-full" aria-hidden="true"><path d="M92 140c29-55 83-82 168-82s139 27 168 82c-16 82-68 145-168 145S108 222 92 140Z" fill="var(--accent-soft)" stroke="var(--accent-strong)" strokeOpacity=".55" strokeWidth="2"/><path d="M117 139c34-36 80-55 143-55s109 19 143 55c-21 59-62 96-143 96s-122-37-143-96Z" fill="none" stroke="var(--accent-blue)" strokeWidth="2" strokeDasharray="5 8"/><path d="M146 133c12-12 28-13 38-3l-2 34c-7 11-21 14-32 8-13-7-15-27-4-39Zm51-24c11-10 27-10 35 1v39c-7 10-21 13-32 7-13-7-13-36-3-47Zm41-9c8-7 23-7 31 1v42c-7 9-18 11-27 5-10-7-11-40-4-48Zm43 0c8-8 23-8 31-1 7 8 6 41-4 48-9 6-20 4-27-5V100Zm42 9c8-11 24-11 35-1 10 11 10 40-3 47-11 6-25 3-32-7v-39Zm46 24c11 12 9 32-4 39-11 6-25 3-32-8l-2-34c10-10 26-9 38 3Z" fill="var(--surface)" stroke="var(--accent-strong)" strokeOpacity=".48" strokeWidth="1.5"/></svg></div></div></section><div className="w-full rounded-2xl border border-border bg-surface p-6 shadow-sm sm:p-8">{children}</div></div></div>;
 }

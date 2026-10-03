@@ -1,3 +1,11 @@
 import { AppShell } from "@/components/app-shell";
-import { PlaceholderPage } from "@/components/placeholder-page";
-export default function Page() { return <AppShell active="Progress"><PlaceholderPage section="Progress" /></AppShell>; }
+import { ProgressLoadError, ProgressRecordView } from "@/components/practice/learner-progress-pages";
+import { loadLearnerProgress } from "@/practice/progress-data";
+import type { LearnerProgress } from "@/practice/progress";
+export default async function Page() {
+  let progress: LearnerProgress | null = null;
+  try {
+    progress = await loadLearnerProgress();
+  } catch { /* The learner facing error state is rendered below. */ }
+  return <AppShell active="Progress">{progress ? <ProgressRecordView progress={progress} /> : <ProgressLoadError />}</AppShell>;
+}

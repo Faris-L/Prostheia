@@ -18,6 +18,12 @@
 
 # next.js
 /.next/
+/.next-e2e/
+/.next-e2e-*/
+/.next-phase8-build/
+/.next-phase8-build-*/
+/.next-phase9-build/
+/.next-phase10-build/
 /out/
 
 # production
@@ -43,3 +49,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# temporary dental asset research
+/.research/bodyparts3d-4.0/
+/.research/dundee-permanent-teeth/
+
+# Dundee candidate intake: keep the instruction visible, ignore downloaded models
+/Dundee-3D-files/*
+!/Dundee-3D-files/README.md

@@ -4,7 +4,11 @@
 > **Product:** Prostheia — Digital Dental Design Studio  
 > **Source documents:** `plan.md`, `PRD.md`, `TECH.md`  
 > **Database platform:** Supabase PostgreSQL  
-> **Status:** Database design baseline  
+> **Status:** Database design baseline
+
+> This file is the planned architecture baseline, not a declaration that every
+> listed object has been deployed. The deployed schema is defined by the
+> timestamped files in `supabase/migrations/` and the live Supabase project.
 > **Purpose:** Define the relational schema, enums, relationships, constraints, indexes, storage model, Row Level Security, database functions, and migration strategy required by Prostheia.
 
 ---
@@ -1391,7 +1395,14 @@ Educational thresholds and domain rules should have provenance.
 
 ---
 
-# 13.1 `public.domain_references`
+# 13.1 Planned `public.domain_references` (not deployed)
+
+This is a future traceability design. Phase 25 records source-review decisions
+in its internal audit register and preserves source metadata already present in
+content; it does not require this table. No repository migration creates
+`public.domain_references` or its dependent join tables, and the live project
+does not contain them. Do not treat the DDL below or migration step 008 in the
+recommended sequence as deployed schema.
 
 ```sql
 create table public.domain_references (

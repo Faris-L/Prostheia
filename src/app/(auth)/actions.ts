@@ -53,7 +53,9 @@ export async function signup(formData: FormData) {
   if (!parsed.success) redirect("/signup?error=invalid-input");
 
   const supabase = await createServerSupabaseClient();
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
+  const appUrl = process.env.NODE_ENV === "production"
+    ? "https://prostheia.vercel.app"
+    : process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
   let emailRedirectTo: string;
 
   try {
